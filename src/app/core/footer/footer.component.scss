@@ -1,0 +1,27 @@
+.footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(93, 93, 93);
+    color: rgb(0, 0, 0);
+    text-align : left;
+    z-index: 100;
+    margin-top : 20px;
+}
+
+.footer span{
+    padding: 10px;
+}
+
+.div-third{
+    width: 33%;
+}
+
+a:hover{
+    color: white;
+}
+
+#credit{
+    padding-left: 20px;
+}
