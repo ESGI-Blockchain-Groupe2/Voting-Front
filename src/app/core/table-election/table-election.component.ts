@@ -15,7 +15,6 @@ export class TableElectionComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    console.table(this.elections)
 
   }
   
