@@ -6,33 +6,9 @@
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="./assets/logo.png">
-  <script language="javascript" type="text/javascript" src="web3.min.js"></script>
-  <!-- 1. Include vote_abi.js here -->
-  <!--<script language="javascript" type="text/javascript" src="cryptozombies_abi.js"></script>-->
+
 </head>
 <body>
-  <script>
-    function startApp(){
-      var votingAppAddress = "YOUR_CONTRACT_ADDRESS";
-      // votingApp = new web3js.eth.Contract(votingABI, votingAppAddress);
-    }
-    window.addEventListener('load', function() {
-
-      // Checking if Web3 has been injected by the browser (Mist/MetaMask)
-      if (typeof web3 !== 'undefined') {
-        // Use Mist/MetaMask's provider
-        web3js = new Web3(web3.currentProvider);
-      } else {
-        // Handle the case where the user doesn't have web3. Probably
-        // show them a message telling them to install MetaMask in
-        // order to use our app.
-      }
-
-      // Now you can start your app & access web3js freely:
-      startApp()
-
-    })
-  </script>
   <app-root></app-root>
 </body>
 </html>
