@@ -7,6 +7,7 @@ import { FooterComponent } from './footer/footer.component';
 import { TableElectionComponent } from './table-election/table-election.component';
 import { VoteComponent } from './vote/vote.component';
 import { ResultsComponent } from './results/results.component';
+import { FormsModule } from '@angular/forms';
 
 registerLocaleData(localeFr);
 
@@ -20,7 +21,8 @@ registerLocaleData(localeFr);
     ResultsComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     PageNotFoundComponent, 

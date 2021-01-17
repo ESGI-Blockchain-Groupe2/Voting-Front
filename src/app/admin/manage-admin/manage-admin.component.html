@@ -1,1 +1,32 @@
-<p>manage-admin works!</p>
+
+
+<div class="container-fluid">
+<div class="row">
+    <div class="div_10"></div>
+
+    <div class="div_80">
+    <div class="marge"></div>
+
+    <div class="titre_page">{{title}}</div>
+
+    <form>
+      <div class="form-group">
+        <label for="userAdress">Adresse de l'utilisateur</label>
+        <input type="text" class="form-control" id="userAdress" aria-describedby="adressHelp" placeholder="Entrez une adresse"
+        (change)="changeAddress($event)">
+        <small id="adressHelp" class="form-text text-muted">L'adresse correspond à la clé publique du wallet de l'utilisateur.</small>
+      </div>
+
+      <div *ngIf="invalidForm" class="alert alert-danger" role="alert">
+        Vous devez renseigner l'adresse de l'utilisateur.
+    </div>
+
+      <button type="submit" (click)="submitAdd()" class="btn btn-success">Ajouter</button>
+      <button type="submit" (click)="submitDelete()" class="btn btn-danger">Supprimer</button>
+    </form>
+
+
+    <div class="marge"></div>
+    <div class="div_10"></div>
+  </div>
+</div>

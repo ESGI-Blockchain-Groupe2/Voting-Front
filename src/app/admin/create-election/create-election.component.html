@@ -1,1 +1,40 @@
-<p>create-election works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="div_10"></div>
+    
+        <div class="div_80">
+        <div class="marge"></div>
+    
+        <div class="titre_page">{{title}}</div>
+
+        <form>
+            <div class="form-group">
+              <label for="election-title">Titre</label>
+              <input type="text" class="form-control" id="election-title" placeholder="Entrez un titre"
+              (change)="changeTitleElection($event)">
+            </div>
+
+            <div class="form-group">
+                <label for="election-nb-candidates">Nombre de candidats</label>
+                <input type="number" class="form-control" id="election-nb-candidates" min="2" value="2" 
+                (change)="changeNbCandidates($event)">
+            </div>
+
+            <div *ngFor="let in of counter(nbCandidates) ;let i = index" class="form-group">
+                <label for="election-candidate-name">Nom du candidat {{i+1}}</label>
+                <input type="text" class="form-control" id="election-candidate-name" 
+                (change)="changeCandidateName($event, i)">
+            </div>
+
+            <div *ngIf="invalidForm" class="alert alert-danger" role="alert">
+                Formulaire invalide, vous devez remplir tous les champs.
+            </div>
+      
+            <button type="submit" (click)="submit();" class="btn btn-success">Créer</button>
+        </form>
+    
+    
+        <div class="marge"></div>
+        <div class="div_10"></div>
+    </div>
+</div>

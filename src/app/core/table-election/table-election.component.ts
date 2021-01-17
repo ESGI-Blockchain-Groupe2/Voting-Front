@@ -74,7 +74,7 @@ export class TableElectionComponent implements OnInit {
   }
 
   closeElection(){
-
+    //appeler la fonction du contrat
   }
 
   

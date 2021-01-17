@@ -1,0 +1,84 @@
+.marge{
+    height: 100px;
+}
+
+.item{
+    width: 100%;
+    background: white;
+    color : black;
+    margin-bottom: 30px;
+    display: block;
+    overflow: auto;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.half-div{  
+    padding: 20px; 
+    width: 50%;
+    float: left;
+    display: block;
+}
+
+.third-div{
+    padding: 20px; 
+    width: 33%;
+    float: left;
+    display: block;
+}
+
+.full{
+    width: 100%;
+    float: left;
+    padding: 20px;
+}
+
+
+.floatR{
+    float: right;
+}
+
+.btn{
+    margin: 10px;
+}
+
+
+hr{
+    background: white;
+}
+
+
+
+
+.btn:focus {
+    cursor: pointer;
+    outline: none;
+
+}
+
+.div_10{
+    width: 10%;
+    
+}
+
+.div_80{
+    width: 80%;
+    background-color: white;
+    min-height: 800px;
+}
+
+.titre_page{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+
+form{
+    margin: 20px;
+}

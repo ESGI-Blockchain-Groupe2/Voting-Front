@@ -1,1 +1,34 @@
-<p>vote works!</p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="div_10"></div>
+    
+        <div class="div_80">
+        <div class="marge"></div>
+    
+        <div class="titre_page">{{title}}</div>
+
+        <form>
+
+            <div *ngFor="let name of candidates ;let i = index" class="form-group">
+
+                <label for="candidate-note">Candidat {{i+1}} : <b>{{name}}</b> </label>
+                
+                <select class="form-control" id="candidate-note"
+                (change)="changeCandidateNote($event, i)">
+                    <option value="-1">Selectionnez une note</option>
+                    <option *ngFor="let note of possibleNotes ;let i = index" value="{{i}}">{{note}}</option>
+                </select>
+            </div>
+
+            <div *ngIf="invalidForm" class="alert alert-danger" role="alert">
+                Formulaire invalide, vous devez noter tous les candidats.
+            </div>
+
+            <button type="submit" (click)="submit();" class="btn btn-success">Valider mon vote</button>
+        </form>
+    
+    
+        <div class="marge"></div>
+        <div class="div_10"></div>
+    </div>
+</div>
