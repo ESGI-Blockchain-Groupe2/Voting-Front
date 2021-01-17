@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AdminModule } from './admin/admin.module';
-import { UsersModule } from './users/users.module';
 import { CoreModule } from './core/core.module';
 import { CommonModule } from '@angular/common';
 
@@ -19,7 +18,6 @@ import { CommonModule } from '@angular/common';
     AppRoutingModule,
     NgbModule,
     AdminModule,
-    UsersModule,
     CoreModule
   ],
   providers: [],

@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ElectionListComponent } from './election-list.component';
+import { ManageAdminComponent } from './manage-admin.component';
 
-describe('ElectionListComponent', () => {
-  let component: ElectionListComponent;
-  let fixture: ComponentFixture<ElectionListComponent>;
+describe('ManageAdminComponent', () => {
+  let component: ManageAdminComponent;
+  let fixture: ComponentFixture<ManageAdminComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ElectionListComponent ]
+      declarations: [ ManageAdminComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(ElectionListComponent);
+    fixture = TestBed.createComponent(ManageAdminComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

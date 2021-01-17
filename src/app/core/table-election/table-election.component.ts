@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Election } from 'src/app/models/election';
 
 @Component({
@@ -8,15 +9,74 @@ import { Election } from 'src/app/models/election';
 })
 export class TableElectionComponent implements OnInit {
 
-  @Input() public title: string;
-  @Input() public elections: any[];
+  public title: string = "Liste des élections disponibles";
+  public elections: any[];
 
-  constructor() {
+
+  constructor(private router: Router) {
   }
 
   ngOnInit(): void {
+    this.elections = [
+      {
+        title: "test",
+        nbTotalVoters: 3,
+        isOpen: true,
+        creationDate: "12-12-2020",
+        expiresAfter: "12-12-2020",
+      },
+      {
+        title: "test2",
+        nbTotalVoters: 32,
+        isOpen: false,
+        creationDate: "12-12-2020",
+        expiresAfter: "12-12-2020",
+      },
+      {
+        title: "test2",
+        nbTotalVoters: 32,
+        isOpen: false,
+        creationDate: "12-12-2020",
+        expiresAfter: "12-12-2020",
+      },
+      {
+        title: "test2",
+        nbTotalVoters: 32,
+        isOpen: false,
+        creationDate: "12-12-2020",
+        expiresAfter: "12-12-2020",
+      },
+      {
+        title: "test2",
+        nbTotalVoters: 32,
+        isOpen: false,
+        creationDate: "12-12-2020",
+        expiresAfter: "12-12-2020",
+      },
+    ];
 
   }
+
+  createElection() {
+    this.router.navigateByUrl('/admin-election');
+  }
+
+  manageAdmin(){
+    this.router.navigateByUrl('/manage-admin');
+  }
+
+  vote(){
+    this.router.navigateByUrl('/vote');
+  }
+
+  seeResults(){
+    this.router.navigateByUrl('/results');
+  }
+
+  closeElection(){
+
+  }
+
   
 
 }

@@ -5,6 +5,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { TableElectionComponent } from './table-election/table-election.component';
+import { VoteComponent } from './vote/vote.component';
+import { ResultsComponent } from './results/results.component';
 
 registerLocaleData(localeFr);
 
@@ -13,7 +15,9 @@ registerLocaleData(localeFr);
     PageNotFoundComponent, 
     HeaderComponent, 
     FooterComponent,
-    TableElectionComponent
+    TableElectionComponent,
+    VoteComponent,
+    ResultsComponent
   ],
   imports: [
     CommonModule
