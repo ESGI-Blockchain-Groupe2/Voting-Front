@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
-import { ContractService } from './services/contract.service';
+import { $ } from 'protractor';
+import { ElectionFactoryService } from './services/election-factory.service';
+import { Web3ConnectionService } from './services/web3-connection.service';
 
 
 @Component({
@@ -11,18 +13,26 @@ export class AppComponent {
 
   public connectedToContract = false;
 
-  constructor(private contractService: ContractService) { }
+  constructor(private web3ConnectionService: Web3ConnectionService, private electionFactoryService: ElectionFactoryService) { }
 
   async ngOnInit() {
 
     while(this.connectedToContract !== true){
-      this.connectedToContract = await this.contractService.connectAccount();
+      this.connectedToContract = await this.web3ConnectionService.connectAccount();
       console.log(this.connectedToContract);
     }
 
-    if(this.connectedToContract){
-      console.log(await this.contractService.getGreeting());
-    }
+    /*if(this.connectedToContract){
+      console.log(await this.electionFactoryService.createElection());
+    }*/
+    /*if(this.connectedToContract){
+      console.log("reponse");
+      console.log(await this.electionFactoryService.getElectionCount());
+    }*/
+    /*if(this.connectedToContract){
+      console.log("reponse");
+      console.log(await this.electionFactoryService.getElection());
+    }*/
 
   }
 }

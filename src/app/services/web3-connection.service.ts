@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
 import Web3 from "web3";
 import { Subject } from 'rxjs';
-import {votingAddress, votingABI} from 'src/voting_abi.js';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ContractService {
+export class Web3ConnectionService {
   web3js: any;
   provider: any;
   accounts: any;
-  voting: any;
 
   private accountStatusSource = new Subject<any>();
   accountStatus$ = this.accountStatusSource.asObservable();
@@ -25,6 +23,7 @@ export class ContractService {
       return false;
     }
     else{
+      console.log("passe la");
       this.web3js = new Web3(Web3.givenProvider); // create web3 instance
       this.accounts = await this.web3js.eth.getAccounts(); 
       if(this.accounts.length === 0){
@@ -35,18 +34,4 @@ export class ContractService {
       return true;
     }
   }
-
-
-  async getGreeting() {
-    this.web3js = new Web3(Web3.givenProvider); // create web3 instance
-    this.accounts = await this.web3js.eth.getAccounts(); 
-    
-    this.voting = new this.web3js.eth.Contract(votingABI.abi, votingAddress);
-    
-    const helloworld = await this.voting.methods.getGreeting().call({ from: this.accounts[0] });
-    
-
-    return helloworld;
-  }
-
 }
