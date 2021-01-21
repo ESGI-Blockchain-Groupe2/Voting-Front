@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ElectionFactoryService } from 'src/app/services/election-factory.service';
 
 @Component({
   selector: 'app-manage-admin',
@@ -10,8 +11,10 @@ export class ManageAdminComponent implements OnInit {
   public title : string = "Gérer les administrateurs";
   public address : string = "";
   public invalidForm: boolean = false;
+  public isLoadingDelete: boolean = false;
+  public isLoadingCreate: boolean = false;
 
-  constructor() { }
+  constructor(private electionFactoryService: ElectionFactoryService) { }
 
   ngOnInit(): void {
   }
@@ -32,17 +35,35 @@ export class ManageAdminComponent implements OnInit {
     return true;
   }
 
-  submitDelete(){
-
+  async submitDelete(){
     if(this.formIsValid()){
-      console.log("submit")
+      this.isLoadingDelete = true;
+      let responseStatus = await this.electionFactoryService.deleteAdmin(this.address);
+      this.isLoadingDelete = false;
+      if(responseStatus){
+        alert("Cet utilisateur n'est plus administrateur !");
+        location.replace('/');
+      }
+      else{
+        alert("L'action a échouée, recommencez plus tard");
+        location.replace('/');
+      }
     }
   }
 
-  submitAdd(){
-
+  async submitAdd(){
     if(this.formIsValid()){
-      console.log("submit")
+      this.isLoadingCreate = true;
+      let responseStatus = await this.electionFactoryService.addAdmin(this.address);
+      this.isLoadingCreate = false;
+      if(responseStatus){
+        alert("Cet utilisateur est désormais administrateur !");
+        location.replace('/');
+      }
+      else{
+        alert("L'action a échouée, recommencez plus tard");
+        location.replace('/');
+      }
     }
   }
 

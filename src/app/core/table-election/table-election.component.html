@@ -7,33 +7,39 @@
   
         <div class="titre_page">{{title}}</div>
 
-        <button type="button" (click)="createElection();" class="btn btn-info">Ajouter une election</button>
-        <button type="button" (click)="manageAdmin();" class="btn btn-info">Gerer les administrateurs</button>
+        <button *ngIf="userIsAdmin" type="button" (click)="createElection();" class="btn btn-info">Ajouter une election</button>
+        <button *ngIf="userIsAdmin" type="button" (click)="manageAdmin();" class="btn btn-info">Gerer les administrateurs</button>
   
         <div *ngIf="elections.length == 0" class="alert alert-secondary text-center">
           Aucune élection n'est disponible.
         </div>
 
-        <table id="election-list" class="table table-striped">
+        <table *ngIf="elections.length != 0" id="election-list" class="table table-striped">
           <thead>
             <tr>
               <th scope="col">Titre</th>
-              <th scope="col">Candidats</th>
-              <th scope="col">Nombre de votant</th>
-              <th scope="col">Fermeture</th>
+              <th scope="col">Nombre de candidats</th>
+              <th scope="col">Nombre de votants</th>
+              <th scope="col">Date de creation</th>
+              <th  scope="col">Date de fermeture</th>
               <th scope="col">Actions</th>
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor="let election of elections;">
+            <tr *ngFor="let election of elections; let i = index">
               <th>{{election.title}}</th>
-              <td>{{election.title}}</td>
+              <td>{{election.candidatesCount}}</td>
               <td>{{election.nbTotalVoters}}</td>
-              <td>{{election.expiresAfter}}</td>
+              <td>{{election.creationDate | date}}</td>
+              <td *ngIf="!election.isOpen">{{election.closingDate | date}}</td>
+              <td *ngIf="election.isOpen"></td>
               <td>
-                <button type="button" (click)="vote();" class="btn btn-secondary">Voter</button>
-                <button type="button" (click)="seeResults();" class="btn btn-secondary">Resultats</button>
-                <button type="button" (click)="closeElection();" class="btn btn-secondary">Fermer</button>
+                <button *ngIf="election.isOpen" type="button" (click)="vote(i+1);" class="btn btn-secondary">Voter</button>
+                <button *ngIf="!election.isOpen" type="button" (click)="seeResults(i+1);" class="btn btn-secondary">Resultats</button>
+                <div *ngIf="isLoading" class="spinner-border text-secondary" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <button *ngIf="election.isOpen && userIsAdmin && !isLoading" type="button" (click)="closeElection(i+1);" class="btn btn-secondary">Fermer</button>
               </td>
             </tr>
           </tbody>

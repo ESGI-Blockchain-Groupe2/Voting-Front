@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { CandidateService } from 'src/app/services/candidate.service';
+import { VoteService } from 'src/app/services/vote.service';
 
 @Component({
   selector: 'app-vote',
@@ -9,9 +12,11 @@ import { Component, OnInit } from '@angular/core';
 export class VoteComponent implements OnInit {
 
   public title : string = "Voter";
-  public candidates = [];
+  public candidates: string[] = [];
   public notes = [];
   public invalidForm: boolean = false;
+  private electionId: number;
+  public isLoading: boolean = false;
 
   public possibleNotes = [
     "À rejeter", 
@@ -24,25 +29,32 @@ export class VoteComponent implements OnInit {
   ];
 
 
-  constructor() {
-    this.candidates = [
-      "Jean",
-      "Eudes",
-      "Marc",
-      "Daniel"
-    ]
+  constructor(
+    private activatedRoute: ActivatedRoute, 
+    private candidateService: CandidateService,
+    private voteService: VoteService
+    ) {}
+
+  async ngOnInit() {
+    this.activatedRoute.queryParams.subscribe((params) => {
+      this.electionId = params['electionId'];
+    });
+
+    let candidateCount = await this.candidateService.getCandidatesCount(this.electionId);
+
+    for (let count = 0; count < candidateCount; count++) {
+      this.candidates.push(
+        await this.candidateService.getCandidateName(this.electionId, count)
+      );
+    }
 
     for (const i in this.candidates) {
       this.notes[i] = -1;
     }
-   }
-
-  ngOnInit(): void {
   }
 
   changeCandidateNote(event, candidateId){
     this.notes[candidateId] = parseInt(event.target.value);
-    console.log(this.notes);
   }
 
   formIsValid(){
@@ -65,12 +77,21 @@ export class VoteComponent implements OnInit {
     return true;
   }
 
-  submit(){
+  async submit(){
 
     if(this.formIsValid()){
-      console.log("submit");
-      console.log(this.notes);
+
+      this.isLoading = true;
+      let responseStatus = await this.voteService.voteToElection(this.electionId, this.notes);
+      this.isLoading = false;
+      if(responseStatus){
+        alert("Votre vote a bien été pris en compte !");
+        location.replace('/');
+      }
+      else{
+        alert("Votre vote n'a pas pu être pris en compte, recommencez plus tard");
+        location.replace('/');
+      }
     }
   }
-
 }

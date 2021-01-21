@@ -24,7 +24,11 @@
                 Formulaire invalide, vous devez noter tous les candidats.
             </div>
 
-            <button type="submit" (click)="submit();" class="btn btn-success">Valider mon vote</button>
+            <div *ngIf="isLoading" class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+
+            <button *ngIf="!isLoading" type="submit" (click)="submit();" class="btn btn-success">Valider mon vote</button>
         </form>
     
     

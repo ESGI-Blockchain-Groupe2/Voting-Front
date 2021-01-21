@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Election } from 'src/app/models/election';
+import { ElectionFactoryService } from 'src/app/services/election-factory.service';
+import { ElectionHelperService } from 'src/app/services/election-helper.service';
 
 @Component({
   selector: 'app-table-election',
@@ -10,51 +12,27 @@ import { Election } from 'src/app/models/election';
 export class TableElectionComponent implements OnInit {
 
   public title: string = "Liste des élections disponibles";
-  public elections: any[];
+  public elections: any[] = [];
+  public userIsAdmin: boolean = false;$
+  public isLoading: boolean = false;
 
 
-  constructor(private router: Router) {
+  constructor(
+    private router: Router, 
+    private electionFactoryService : ElectionFactoryService,
+    private electionHelperService: ElectionHelperService
+    ) {
   }
 
-  ngOnInit(): void {
-    this.elections = [
-      {
-        title: "test",
-        nbTotalVoters: 3,
-        isOpen: true,
-        creationDate: "12-12-2020",
-        expiresAfter: "12-12-2020",
-      },
-      {
-        title: "test2",
-        nbTotalVoters: 32,
-        isOpen: false,
-        creationDate: "12-12-2020",
-        expiresAfter: "12-12-2020",
-      },
-      {
-        title: "test2",
-        nbTotalVoters: 32,
-        isOpen: false,
-        creationDate: "12-12-2020",
-        expiresAfter: "12-12-2020",
-      },
-      {
-        title: "test2",
-        nbTotalVoters: 32,
-        isOpen: false,
-        creationDate: "12-12-2020",
-        expiresAfter: "12-12-2020",
-      },
-      {
-        title: "test2",
-        nbTotalVoters: 32,
-        isOpen: false,
-        creationDate: "12-12-2020",
-        expiresAfter: "12-12-2020",
-      },
-    ];
+  async ngOnInit(): Promise<void> {
+    this.userIsAdmin = await this.electionFactoryService.isUserAdmin();
 
+    let electionCount = await this.electionFactoryService.getElectionCount();
+
+    for (let count = 1; count <= electionCount; count++) {
+      let election = await this.electionFactoryService.getElection(count);
+      this.elections.push(election);
+    }
   }
 
   createElection() {
@@ -65,18 +43,18 @@ export class TableElectionComponent implements OnInit {
     this.router.navigateByUrl('/manage-admin');
   }
 
-  vote(){
-    this.router.navigateByUrl('/vote');
+  vote(electionId){
+    this.router.navigate(['/vote'], {queryParams: {electionId: electionId}});
   }
 
-  seeResults(){
-    this.router.navigateByUrl('/results');
+  seeResults(electionId){
+    this.router.navigate(['/results'], {queryParams: {electionId: electionId}});
   }
 
-  closeElection(){
-    //appeler la fonction du contrat
+  async closeElection(electionId){
+    this.isLoading = true;
+    await this.electionHelperService.endElection(electionId);
+    location.reload();
+    this.isLoading = false;
   }
-
-  
-
 }

@@ -13,33 +13,23 @@
             <thead>
               <tr>
                 <th scope="col">Candidat</th>
-                <th scope="col">Note (en pourcentage)</th>
                 <th scope="col">Note moyenne</th>
+                <th scope="col">Note (en pourcentage)</th>
                 <th scope="col">Résultat</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">1</th>
+              <tr *ngFor="let candidate of candidates ;let i = index">
+                <th scope="row">{{i+1}}</th>
+                <td>{{candidate}}</td>
                 <td>Mark</td>
-                <td>Mark</td>
-                <td>Défaite</td>
-              </tr>
-              <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Mark</td>
-                <td>Défaite</td>
-              </tr>
-              <tr class="table-success">
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>Mark</td>
-                <td>Victoire</td>
+                <td class="table-success">Victoire</td>
               </tr>
             </tbody>
           </table>
     
+          <canvas baseChart [datasets]="datasets" [labels]="labels" [options]="options" [chartType]="type">
+          </canvas>
     
         <div class="marge"></div>
         <div class="div_10"></div>

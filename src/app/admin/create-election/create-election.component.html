@@ -29,8 +29,12 @@
             <div *ngIf="invalidForm" class="alert alert-danger" role="alert">
                 Formulaire invalide, vous devez remplir tous les champs.
             </div>
+
+            <div *ngIf="isLoading" class="spinner-border text-success" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
       
-            <button type="submit" (click)="submit();" class="btn btn-success">Créer</button>
+            <button *ngIf="!isLoading" type="submit" (click)="submit();" class="btn btn-success">Créer</button>
         </form>
     
     

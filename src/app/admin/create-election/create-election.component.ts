@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ElectionFactoryService } from 'src/app/services/election-factory.service';
 
 @Component({
   selector: 'app-create-election',
@@ -12,8 +13,9 @@ export class CreateElectionComponent implements OnInit {
   public nbCandidates : number = 2;
   public candidateNames : string[] = [];
   public invalidForm: boolean = false;
+  public isLoading: boolean = false;
 
-  constructor() { }
+  constructor(private electionFactoryService : ElectionFactoryService) { }
 
   ngOnInit(): void {}
 
@@ -56,10 +58,19 @@ export class CreateElectionComponent implements OnInit {
     return true;
   }
 
-  submit(){
-
+  async submit(){
     if(this.formIsValid()){
-      console.log("submit")
+      this.isLoading = true;
+      let responseStatus = await this.electionFactoryService.createElection(this.titleElection, this.candidateNames);
+      this.isLoading = false;
+      if(responseStatus){
+        alert("Votre élection à bien été créee !");
+        location.replace('/');
+      }
+      else{
+        alert("La création a échouée, recommencez plus tard");
+        location.replace('/');
+      }
     }
   }
 

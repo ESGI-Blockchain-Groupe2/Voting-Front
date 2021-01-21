@@ -23,7 +23,6 @@ export class Web3ConnectionService {
       return false;
     }
     else{
-      console.log("passe la");
       this.web3js = new Web3(Web3.givenProvider); // create web3 instance
       this.accounts = await this.web3js.eth.getAccounts(); 
       if(this.accounts.length === 0){

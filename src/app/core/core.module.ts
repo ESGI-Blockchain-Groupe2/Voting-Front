@@ -8,6 +8,7 @@ import { TableElectionComponent } from './table-election/table-election.componen
 import { VoteComponent } from './vote/vote.component';
 import { ResultsComponent } from './results/results.component';
 import { FormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 registerLocaleData(localeFr);
 
@@ -22,7 +23,8 @@ registerLocaleData(localeFr);
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ChartsModule
   ],
   exports: [
     PageNotFoundComponent, 

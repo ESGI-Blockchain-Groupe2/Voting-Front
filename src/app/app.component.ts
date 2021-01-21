@@ -19,7 +19,7 @@ export class AppComponent {
 
     while(this.connectedToContract !== true){
       this.connectedToContract = await this.web3ConnectionService.connectAccount();
-      console.log(this.connectedToContract);
+      //console.log(this.connectedToContract);
     }
 
     /*if(this.connectedToContract){
