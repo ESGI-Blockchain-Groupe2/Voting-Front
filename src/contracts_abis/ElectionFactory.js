@@ -213,15 +213,15 @@ export const electionFactoryContractABI = {
     "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ElectionFactory.sol",
     "exportedSymbols": {
       "ElectionFactory": [
-        497
+        492
       ]
     },
-    "id": 498,
+    "id": 493,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 249,
+        "id": 244,
         "literals": [
           "solidity",
           ">=",
@@ -235,7 +235,7 @@ export const electionFactoryContractABI = {
         "src": "32:33:1"
       },
       {
-        "id": 250,
+        "id": 245,
         "literals": [
           "experimental",
           "ABIEncoderV2"
@@ -246,10 +246,10 @@ export const electionFactoryContractABI = {
       {
         "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ownable.sol",
         "file": "./ownable.sol",
-        "id": 251,
+        "id": 246,
         "nodeType": "ImportDirective",
-        "scope": 498,
-        "sourceUnit": 1045,
+        "scope": 493,
+        "sourceUnit": 1040,
         "src": "101:23:1",
         "symbolAliases": [],
         "unitAlias": ""
@@ -261,45 +261,45 @@ export const electionFactoryContractABI = {
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 252,
+              "id": 247,
               "name": "Ownable",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1044,
+              "referencedDeclaration": 1039,
               "src": "154:7:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_Ownable_$1044",
+                "typeIdentifier": "t_contract$_Ownable_$1039",
                 "typeString": "contract Ownable"
               }
             },
-            "id": 253,
+            "id": 248,
             "nodeType": "InheritanceSpecifier",
             "src": "154:7:1"
           }
         ],
         "contractDependencies": [
-          1044
+          1039
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 497,
+        "id": 492,
         "linearizedBaseContracts": [
-          497,
-          1044
+          492,
+          1039
         ],
         "name": "ElectionFactory",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 262,
+              "id": 257,
               "nodeType": "Block",
               "src": "183:40:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 260,
+                    "id": 255,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -308,25 +308,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 256,
+                        "id": 251,
                         "name": "listAdmin",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 318,
+                        "referencedDeclaration": 313,
                         "src": "193:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 258,
+                      "id": 253,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 257,
+                        "id": 252,
                         "name": "owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 988,
+                        "referencedDeclaration": 983,
                         "src": "203:5:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -349,7 +349,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 259,
+                      "id": 254,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -370,14 +370,14 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "id": 261,
+                  "id": 256,
                   "nodeType": "ExpressionStatement",
                   "src": "193:23:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 263,
+            "id": 258,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -385,18 +385,18 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 254,
+              "id": 249,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "180:2:1"
             },
             "returnParameters": {
-              "id": 255,
+              "id": 250,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "183:0:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "168:55:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -404,16 +404,16 @@ export const electionFactoryContractABI = {
           },
           {
             "canonicalName": "ElectionFactory.Election",
-            "id": 289,
+            "id": 284,
             "members": [
               {
                 "constant": false,
-                "id": 265,
+                "id": 260,
                 "mutability": "mutable",
                 "name": "title",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "255:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -422,7 +422,7 @@ export const electionFactoryContractABI = {
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 264,
+                  "id": 259,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "255:6:1",
@@ -436,12 +436,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 267,
+                "id": 262,
                 "mutability": "mutable",
                 "name": "creationDate",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "277:20:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -450,7 +450,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 266,
+                  "id": 261,
                   "name": "uint256",
                   "nodeType": "ElementaryTypeName",
                   "src": "277:7:1",
@@ -464,12 +464,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 269,
+                "id": 264,
                 "mutability": "mutable",
                 "name": "closingDate",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "307:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -478,7 +478,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 268,
+                  "id": 263,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "307:4:1",
@@ -492,12 +492,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 271,
+                "id": 266,
                 "mutability": "mutable",
                 "name": "totalVoters",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "333:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -506,7 +506,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 270,
+                  "id": 265,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "333:4:1",
@@ -520,12 +520,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 273,
+                "id": 268,
                 "mutability": "mutable",
                 "name": "isOpen",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "359:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -534,7 +534,7 @@ export const electionFactoryContractABI = {
                   "typeString": "bool"
                 },
                 "typeName": {
-                  "id": 272,
+                  "id": 267,
                   "name": "bool",
                   "nodeType": "ElementaryTypeName",
                   "src": "359:4:1",
@@ -548,12 +548,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 275,
+                "id": 270,
                 "mutability": "mutable",
                 "name": "candidatesCount",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "381:20:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -562,7 +562,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 274,
+                  "id": 269,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "381:4:1",
@@ -576,23 +576,23 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 279,
+                "id": 274,
                 "mutability": "mutable",
                 "name": "candidates",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "411:38:1",
                 "stateVariable": false,
                 "storageLocation": "default",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$300_storage_$",
+                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$295_storage_$",
                   "typeString": "mapping(uint256 => struct ElectionFactory.Candidate)"
                 },
                 "typeName": {
-                  "id": 278,
+                  "id": 273,
                   "keyType": {
-                    "id": 276,
+                    "id": 271,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "420:4:1",
@@ -604,18 +604,18 @@ export const electionFactoryContractABI = {
                   "nodeType": "Mapping",
                   "src": "411:27:1",
                   "typeDescriptions": {
-                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$300_storage_$",
+                    "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$295_storage_$",
                     "typeString": "mapping(uint256 => struct ElectionFactory.Candidate)"
                   },
                   "valueType": {
                     "contractScope": null,
-                    "id": 277,
+                    "id": 272,
                     "name": "Candidate",
                     "nodeType": "UserDefinedTypeName",
-                    "referencedDeclaration": 300,
+                    "referencedDeclaration": 295,
                     "src": "428:9:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Candidate_$300_storage_ptr",
+                      "typeIdentifier": "t_struct$_Candidate_$295_storage_ptr",
                       "typeString": "struct ElectionFactory.Candidate"
                     }
                   }
@@ -625,12 +625,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 283,
+                "id": 278,
                 "mutability": "mutable",
                 "name": "voters",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "459:32:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -639,9 +639,9 @@ export const electionFactoryContractABI = {
                   "typeString": "mapping(address => bool)"
                 },
                 "typeName": {
-                  "id": 282,
+                  "id": 277,
                   "keyType": {
-                    "id": 280,
+                    "id": 275,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "468:7:1",
@@ -657,7 +657,7 @@ export const electionFactoryContractABI = {
                     "typeString": "mapping(address => bool)"
                   },
                   "valueType": {
-                    "id": 281,
+                    "id": 276,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "479:4:1",
@@ -672,12 +672,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 286,
+                "id": 281,
                 "mutability": "mutable",
                 "name": "winners",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "501:14:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -687,7 +687,7 @@ export const electionFactoryContractABI = {
                 },
                 "typeName": {
                   "baseType": {
-                    "id": 284,
+                    "id": 279,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "501:4:1",
@@ -696,7 +696,7 @@ export const electionFactoryContractABI = {
                       "typeString": "uint256"
                     }
                   },
-                  "id": 285,
+                  "id": 280,
                   "length": null,
                   "nodeType": "ArrayTypeName",
                   "src": "501:6:1",
@@ -710,12 +710,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 288,
+                "id": 283,
                 "mutability": "mutable",
                 "name": "winner",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 289,
+                "scope": 284,
                 "src": "525:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -724,7 +724,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 287,
+                  "id": 282,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "525:4:1",
@@ -739,22 +739,22 @@ export const electionFactoryContractABI = {
             ],
             "name": "Election",
             "nodeType": "StructDefinition",
-            "scope": 497,
+            "scope": 492,
             "src": "229:314:1",
             "visibility": "public"
           },
           {
             "canonicalName": "ElectionFactory.Candidate",
-            "id": 300,
+            "id": 295,
             "members": [
               {
                 "constant": false,
-                "id": 291,
+                "id": 286,
                 "mutability": "mutable",
                 "name": "name",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 300,
+                "scope": 295,
                 "src": "576:11:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -763,7 +763,7 @@ export const electionFactoryContractABI = {
                   "typeString": "string"
                 },
                 "typeName": {
-                  "id": 290,
+                  "id": 285,
                   "name": "string",
                   "nodeType": "ElementaryTypeName",
                   "src": "576:6:1",
@@ -777,12 +777,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 295,
+                "id": 290,
                 "mutability": "mutable",
                 "name": "notes",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 300,
+                "scope": 295,
                 "src": "597:28:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -791,9 +791,9 @@ export const electionFactoryContractABI = {
                   "typeString": "mapping(uint256 => uint256)"
                 },
                 "typeName": {
-                  "id": 294,
+                  "id": 289,
                   "keyType": {
-                    "id": 292,
+                    "id": 287,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "606:4:1",
@@ -809,7 +809,7 @@ export const electionFactoryContractABI = {
                     "typeString": "mapping(uint256 => uint256)"
                   },
                   "valueType": {
-                    "id": 293,
+                    "id": 288,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "614:4:1",
@@ -824,12 +824,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 297,
+                "id": 292,
                 "mutability": "mutable",
                 "name": "percent",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 300,
+                "scope": 295,
                 "src": "635:12:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -838,7 +838,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 296,
+                  "id": 291,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "635:4:1",
@@ -852,12 +852,12 @@ export const electionFactoryContractABI = {
               },
               {
                 "constant": false,
-                "id": 299,
+                "id": 294,
                 "mutability": "mutable",
                 "name": "averageNote",
                 "nodeType": "VariableDeclaration",
                 "overrides": null,
-                "scope": 300,
+                "scope": 295,
                 "src": "657:16:1",
                 "stateVariable": false,
                 "storageLocation": "default",
@@ -866,7 +866,7 @@ export const electionFactoryContractABI = {
                   "typeString": "uint256"
                 },
                 "typeName": {
-                  "id": 298,
+                  "id": 293,
                   "name": "uint",
                   "nodeType": "ElementaryTypeName",
                   "src": "657:4:1",
@@ -881,19 +881,19 @@ export const electionFactoryContractABI = {
             ],
             "name": "Candidate",
             "nodeType": "StructDefinition",
-            "scope": 497,
+            "scope": 492,
             "src": "549:131:1",
             "visibility": "public"
           },
           {
             "constant": false,
             "functionSelector": "9a74c695",
-            "id": 302,
+            "id": 297,
             "mutability": "mutable",
             "name": "electionsCount",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 497,
+            "scope": 492,
             "src": "685:26:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -902,7 +902,7 @@ export const electionFactoryContractABI = {
               "typeString": "uint256"
             },
             "typeName": {
-              "id": 301,
+              "id": 296,
               "name": "uint",
               "nodeType": "ElementaryTypeName",
               "src": "685:4:1",
@@ -917,23 +917,23 @@ export const electionFactoryContractABI = {
           {
             "constant": false,
             "functionSelector": "5e6fef01",
-            "id": 306,
+            "id": 301,
             "mutability": "mutable",
             "name": "elections",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 497,
+            "scope": 492,
             "src": "717:43:1",
             "stateVariable": true,
             "storageLocation": "default",
             "typeDescriptions": {
-              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$289_storage_$",
+              "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$284_storage_$",
               "typeString": "mapping(uint256 => struct ElectionFactory.Election)"
             },
             "typeName": {
-              "id": 305,
+              "id": 300,
               "keyType": {
-                "id": 303,
+                "id": 298,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "726:4:1",
@@ -945,18 +945,18 @@ export const electionFactoryContractABI = {
               "nodeType": "Mapping",
               "src": "717:26:1",
               "typeDescriptions": {
-                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$289_storage_$",
+                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$284_storage_$",
                 "typeString": "mapping(uint256 => struct ElectionFactory.Election)"
               },
               "valueType": {
                 "contractScope": null,
-                "id": 304,
+                "id": 299,
                 "name": "Election",
                 "nodeType": "UserDefinedTypeName",
-                "referencedDeclaration": 289,
+                "referencedDeclaration": 284,
                 "src": "734:8:1",
                 "typeDescriptions": {
-                  "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                  "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                   "typeString": "struct ElectionFactory.Election"
                 }
               }
@@ -966,12 +966,12 @@ export const electionFactoryContractABI = {
           },
           {
             "constant": false,
-            "id": 310,
+            "id": 305,
             "mutability": "mutable",
             "name": "electionToOwner",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 497,
+            "scope": 492,
             "src": "767:41:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -980,9 +980,9 @@ export const electionFactoryContractABI = {
               "typeString": "mapping(uint256 => address)"
             },
             "typeName": {
-              "id": 309,
+              "id": 304,
               "keyType": {
-                "id": 307,
+                "id": 302,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "776:4:1",
@@ -998,7 +998,7 @@ export const electionFactoryContractABI = {
                 "typeString": "mapping(uint256 => address)"
               },
               "valueType": {
-                "id": 308,
+                "id": 303,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "784:7:1",
@@ -1014,12 +1014,12 @@ export const electionFactoryContractABI = {
           },
           {
             "constant": false,
-            "id": 314,
+            "id": 309,
             "mutability": "mutable",
             "name": "ownerElectionCount",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 497,
+            "scope": 492,
             "src": "814:44:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1028,9 +1028,9 @@ export const electionFactoryContractABI = {
               "typeString": "mapping(address => uint256)"
             },
             "typeName": {
-              "id": 313,
+              "id": 308,
               "keyType": {
-                "id": 311,
+                "id": 306,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "823:7:1",
@@ -1046,7 +1046,7 @@ export const electionFactoryContractABI = {
                 "typeString": "mapping(address => uint256)"
               },
               "valueType": {
-                "id": 312,
+                "id": 307,
                 "name": "uint",
                 "nodeType": "ElementaryTypeName",
                 "src": "834:4:1",
@@ -1061,12 +1061,12 @@ export const electionFactoryContractABI = {
           },
           {
             "constant": false,
-            "id": 318,
+            "id": 313,
             "mutability": "mutable",
             "name": "listAdmin",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 497,
+            "scope": 492,
             "src": "864:35:1",
             "stateVariable": true,
             "storageLocation": "default",
@@ -1075,9 +1075,9 @@ export const electionFactoryContractABI = {
               "typeString": "mapping(address => bool)"
             },
             "typeName": {
-              "id": 317,
+              "id": 312,
               "keyType": {
-                "id": 315,
+                "id": 310,
                 "name": "address",
                 "nodeType": "ElementaryTypeName",
                 "src": "873:7:1",
@@ -1093,7 +1093,7 @@ export const electionFactoryContractABI = {
                 "typeString": "mapping(address => bool)"
               },
               "valueType": {
-                "id": 316,
+                "id": 311,
                 "name": "bool",
                 "nodeType": "ElementaryTypeName",
                 "src": "884:4:1",
@@ -1108,7 +1108,7 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 332,
+              "id": 327,
               "nodeType": "Block",
               "src": "945:93:1",
               "statements": [
@@ -1122,7 +1122,7 @@ export const electionFactoryContractABI = {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
                         },
-                        "id": 327,
+                        "id": 322,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1131,25 +1131,25 @@ export const electionFactoryContractABI = {
                           "argumentTypes": null,
                           "baseExpression": {
                             "argumentTypes": null,
-                            "id": 323,
+                            "id": 318,
                             "name": "listAdmin",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 318,
+                            "referencedDeclaration": 313,
                             "src": "964:9:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                               "typeString": "mapping(address => bool)"
                             }
                           },
-                          "id": 325,
+                          "id": 320,
                           "indexExpression": {
                             "argumentTypes": null,
-                            "id": 324,
+                            "id": 319,
                             "name": "_userAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 320,
+                            "referencedDeclaration": 315,
                             "src": "974:12:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_address",
@@ -1172,7 +1172,7 @@ export const electionFactoryContractABI = {
                         "rightExpression": {
                           "argumentTypes": null,
                           "hexValue": "74727565",
-                          "id": 326,
+                          "id": 321,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1196,7 +1196,7 @@ export const electionFactoryContractABI = {
                       {
                         "argumentTypes": null,
                         "hexValue": "596f7520617265206e6f7420616e2061646d696e",
-                        "id": 328,
+                        "id": 323,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1223,7 +1223,7 @@ export const electionFactoryContractABI = {
                           "typeString": "literal_string \"You are not an admin\""
                         }
                       ],
-                      "id": 322,
+                      "id": 317,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1237,7 +1237,7 @@ export const electionFactoryContractABI = {
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 329,
+                    "id": 324,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1252,34 +1252,34 @@ export const electionFactoryContractABI = {
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 330,
+                  "id": 325,
                   "nodeType": "ExpressionStatement",
                   "src": "955:65:1"
                 },
                 {
-                  "id": 331,
+                  "id": 326,
                   "nodeType": "PlaceholderStatement",
                   "src": "1030:1:1"
                 }
               ]
             },
             "documentation": null,
-            "id": 333,
+            "id": 328,
             "name": "isAdmin",
             "nodeType": "ModifierDefinition",
             "overrides": null,
             "parameters": {
-              "id": 321,
+              "id": 316,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 320,
+                  "id": 315,
                   "mutability": "mutable",
                   "name": "_userAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 333,
+                  "scope": 328,
                   "src": "923:20:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1288,7 +1288,7 @@ export const electionFactoryContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 319,
+                    "id": 314,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "923:7:1",
@@ -1310,14 +1310,14 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 348,
+              "id": 343,
               "nodeType": "Block",
               "src": "1113:47:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 346,
+                    "id": 341,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1326,25 +1326,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 342,
+                        "id": 337,
                         "name": "listAdmin",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 318,
+                        "referencedDeclaration": 313,
                         "src": "1123:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 344,
+                      "id": 339,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 343,
+                        "id": 338,
                         "name": "_userAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 335,
+                        "referencedDeclaration": 330,
                         "src": "1133:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1367,7 +1367,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 345,
+                      "id": 340,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1388,7 +1388,7 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "id": 347,
+                  "id": 342,
                   "nodeType": "ExpressionStatement",
                   "src": "1123:30:1"
                 }
@@ -1396,7 +1396,7 @@ export const electionFactoryContractABI = {
             },
             "documentation": null,
             "functionSelector": "70480275",
-            "id": 349,
+            "id": 344,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -1406,7 +1406,7 @@ export const electionFactoryContractABI = {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 338,
+                      "id": 333,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1417,7 +1417,7 @@ export const electionFactoryContractABI = {
                         "typeString": "msg"
                       }
                     },
-                    "id": 339,
+                    "id": 334,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1432,14 +1432,14 @@ export const electionFactoryContractABI = {
                     }
                   }
                 ],
-                "id": 340,
+                "id": 335,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 337,
+                  "id": 332,
                   "name": "isAdmin",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 333,
+                  "referencedDeclaration": 328,
                   "src": "1093:7:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1454,17 +1454,17 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 336,
+              "id": 331,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 335,
+                  "id": 330,
                   "mutability": "mutable",
                   "name": "_userAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 349,
+                  "scope": 344,
                   "src": "1062:20:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1473,7 +1473,7 @@ export const electionFactoryContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 334,
+                    "id": 329,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1062:7:1",
@@ -1490,12 +1490,12 @@ export const electionFactoryContractABI = {
               "src": "1061:22:1"
             },
             "returnParameters": {
-              "id": 341,
+              "id": 336,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1113:0:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "1044:116:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1503,7 +1503,7 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 372,
+              "id": 367,
               "nodeType": "Block",
               "src": "1238:121:1",
               "statements": [
@@ -1517,7 +1517,7 @@ export const electionFactoryContractABI = {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 362,
+                        "id": 357,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1526,7 +1526,7 @@ export const electionFactoryContractABI = {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 359,
+                            "id": 354,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -1537,7 +1537,7 @@ export const electionFactoryContractABI = {
                               "typeString": "msg"
                             }
                           },
-                          "id": 360,
+                          "id": 355,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -1555,11 +1555,11 @@ export const electionFactoryContractABI = {
                         "operator": "!=",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 361,
+                          "id": 356,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 988,
+                          "referencedDeclaration": 983,
                           "src": "1270:5:1",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -1575,7 +1575,7 @@ export const electionFactoryContractABI = {
                       {
                         "argumentTypes": null,
                         "hexValue": "43616e6e6f742072656d6f7665206f776e65722066726f6d2061646d696e73",
-                        "id": 363,
+                        "id": 358,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -1602,7 +1602,7 @@ export const electionFactoryContractABI = {
                           "typeString": "literal_string \"Cannot remove owner from admins\""
                         }
                       ],
-                      "id": 358,
+                      "id": 353,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -1616,7 +1616,7 @@ export const electionFactoryContractABI = {
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 364,
+                    "id": 359,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1631,14 +1631,14 @@ export const electionFactoryContractABI = {
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 365,
+                  "id": 360,
                   "nodeType": "ExpressionStatement",
                   "src": "1248:63:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 370,
+                    "id": 365,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1647,25 +1647,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 366,
+                        "id": 361,
                         "name": "listAdmin",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 318,
+                        "referencedDeclaration": 313,
                         "src": "1321:9:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                           "typeString": "mapping(address => bool)"
                         }
                       },
-                      "id": 368,
+                      "id": 363,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 367,
+                        "id": 362,
                         "name": "_userAddress",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 351,
+                        "referencedDeclaration": 346,
                         "src": "1331:12:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -1688,7 +1688,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "66616c7365",
-                      "id": 369,
+                      "id": 364,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -1709,7 +1709,7 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "id": 371,
+                  "id": 366,
                   "nodeType": "ExpressionStatement",
                   "src": "1321:31:1"
                 }
@@ -1717,7 +1717,7 @@ export const electionFactoryContractABI = {
             },
             "documentation": null,
             "functionSelector": "27e1f7df",
-            "id": 373,
+            "id": 368,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -1727,7 +1727,7 @@ export const electionFactoryContractABI = {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 354,
+                      "id": 349,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -1738,7 +1738,7 @@ export const electionFactoryContractABI = {
                         "typeString": "msg"
                       }
                     },
-                    "id": 355,
+                    "id": 350,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1753,14 +1753,14 @@ export const electionFactoryContractABI = {
                     }
                   }
                 ],
-                "id": 356,
+                "id": 351,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 353,
+                  "id": 348,
                   "name": "isAdmin",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 333,
+                  "referencedDeclaration": 328,
                   "src": "1218:7:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -1775,17 +1775,17 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 352,
+              "id": 347,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 351,
+                  "id": 346,
                   "mutability": "mutable",
                   "name": "_userAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 373,
+                  "scope": 368,
                   "src": "1187:20:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1794,7 +1794,7 @@ export const electionFactoryContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 350,
+                    "id": 345,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1187:7:1",
@@ -1811,12 +1811,12 @@ export const electionFactoryContractABI = {
               "src": "1186:22:1"
             },
             "returnParameters": {
-              "id": 357,
+              "id": 352,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "1238:0:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "1166:193:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -1824,7 +1824,7 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 384,
+              "id": 379,
               "nodeType": "Block",
               "src": "1434:46:1",
               "statements": [
@@ -1833,25 +1833,25 @@ export const electionFactoryContractABI = {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 380,
+                      "id": 375,
                       "name": "listAdmin",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 318,
+                      "referencedDeclaration": 313,
                       "src": "1451:9:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_mapping$_t_address_$_t_bool_$",
                         "typeString": "mapping(address => bool)"
                       }
                     },
-                    "id": 382,
+                    "id": 377,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 381,
+                      "id": 376,
                       "name": "userAddress",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 375,
+                      "referencedDeclaration": 370,
                       "src": "1461:11:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -1869,8 +1869,8 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "functionReturnParameters": 379,
-                  "id": 383,
+                  "functionReturnParameters": 374,
+                  "id": 378,
                   "nodeType": "Return",
                   "src": "1444:29:1"
                 }
@@ -1878,7 +1878,7 @@ export const electionFactoryContractABI = {
             },
             "documentation": null,
             "functionSelector": "74d523a8",
-            "id": 385,
+            "id": 380,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -1886,17 +1886,17 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 376,
+              "id": 371,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 375,
+                  "id": 370,
                   "mutability": "mutable",
                   "name": "userAddress",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 385,
+                  "scope": 380,
                   "src": "1386:19:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1905,7 +1905,7 @@ export const electionFactoryContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 374,
+                    "id": 369,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "1386:7:1",
@@ -1922,17 +1922,17 @@ export const electionFactoryContractABI = {
               "src": "1385:21:1"
             },
             "returnParameters": {
-              "id": 379,
+              "id": 374,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 378,
+                  "id": 373,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 385,
+                  "scope": 380,
                   "src": "1429:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -1941,7 +1941,7 @@ export const electionFactoryContractABI = {
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 377,
+                    "id": 372,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
                     "src": "1429:4:1",
@@ -1956,7 +1956,7 @@ export const electionFactoryContractABI = {
               ],
               "src": "1428:6:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "1365:115:1",
             "stateMutability": "view",
             "virtual": false,
@@ -1964,23 +1964,23 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 473,
+              "id": 468,
               "nodeType": "Block",
               "src": "1610:554:1",
               "statements": [
                 {
                   "assignments": [
-                    400
+                    395
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 400,
+                      "id": 395,
                       "mutability": "mutable",
                       "name": "nbCandidates",
                       "nodeType": "VariableDeclaration",
                       "overrides": null,
-                      "scope": 473,
+                      "scope": 468,
                       "src": "1620:17:1",
                       "stateVariable": false,
                       "storageLocation": "default",
@@ -1989,7 +1989,7 @@ export const electionFactoryContractABI = {
                         "typeString": "uint256"
                       },
                       "typeName": {
-                        "id": 399,
+                        "id": 394,
                         "name": "uint",
                         "nodeType": "ElementaryTypeName",
                         "src": "1620:4:1",
@@ -2002,23 +2002,23 @@ export const electionFactoryContractABI = {
                       "visibility": "internal"
                     }
                   ],
-                  "id": 403,
+                  "id": 398,
                   "initialValue": {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 401,
+                      "id": 396,
                       "name": "_candidatesNames",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 390,
+                      "referencedDeclaration": 385,
                       "src": "1640:16:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                         "typeString": "string memory[] memory"
                       }
                     },
-                    "id": 402,
+                    "id": 397,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2038,7 +2038,7 @@ export const electionFactoryContractABI = {
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 405,
+                    "id": 400,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2049,11 +2049,11 @@ export const electionFactoryContractABI = {
                     "src": "1673:16:1",
                     "subExpression": {
                       "argumentTypes": null,
-                      "id": 404,
+                      "id": 399,
                       "name": "electionsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 302,
+                      "referencedDeclaration": 297,
                       "src": "1673:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2065,39 +2065,39 @@ export const electionFactoryContractABI = {
                       "typeString": "uint256"
                     }
                   },
-                  "id": 406,
+                  "id": 401,
                   "nodeType": "ExpressionStatement",
                   "src": "1673:16:1"
                 },
                 {
                   "assignments": [
-                    408
+                    403
                   ],
                   "declarations": [
                     {
                       "constant": false,
-                      "id": 408,
+                      "id": 403,
                       "mutability": "mutable",
                       "name": "election",
                       "nodeType": "VariableDeclaration",
                       "overrides": null,
-                      "scope": 473,
+                      "scope": 468,
                       "src": "1699:25:1",
                       "stateVariable": false,
                       "storageLocation": "storage",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                        "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                         "typeString": "struct ElectionFactory.Election"
                       },
                       "typeName": {
                         "contractScope": null,
-                        "id": 407,
+                        "id": 402,
                         "name": "Election",
                         "nodeType": "UserDefinedTypeName",
-                        "referencedDeclaration": 289,
+                        "referencedDeclaration": 284,
                         "src": "1699:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                          "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                           "typeString": "struct ElectionFactory.Election"
                         }
                       },
@@ -2105,30 +2105,30 @@ export const electionFactoryContractABI = {
                       "visibility": "internal"
                     }
                   ],
-                  "id": 412,
+                  "id": 407,
                   "initialValue": {
                     "argumentTypes": null,
                     "baseExpression": {
                       "argumentTypes": null,
-                      "id": 409,
+                      "id": 404,
                       "name": "elections",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 306,
+                      "referencedDeclaration": 301,
                       "src": "1727:9:1",
                       "typeDescriptions": {
-                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$289_storage_$",
+                        "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$284_storage_$",
                         "typeString": "mapping(uint256 => struct ElectionFactory.Election storage ref)"
                       }
                     },
-                    "id": 411,
+                    "id": 406,
                     "indexExpression": {
                       "argumentTypes": null,
-                      "id": 410,
+                      "id": 405,
                       "name": "electionsCount",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 302,
+                      "referencedDeclaration": 297,
                       "src": "1737:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2142,7 +2142,7 @@ export const electionFactoryContractABI = {
                     "nodeType": "IndexAccess",
                     "src": "1727:25:1",
                     "typeDescriptions": {
-                      "typeIdentifier": "t_struct$_Election_$289_storage",
+                      "typeIdentifier": "t_struct$_Election_$284_storage",
                       "typeString": "struct ElectionFactory.Election storage ref"
                     }
                   },
@@ -2152,7 +2152,7 @@ export const electionFactoryContractABI = {
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 417,
+                    "id": 412,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2161,25 +2161,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 413,
+                        "id": 408,
                         "name": "election",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 408,
+                        "referencedDeclaration": 403,
                         "src": "1762:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                          "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                           "typeString": "struct ElectionFactory.Election storage pointer"
                         }
                       },
-                      "id": 415,
+                      "id": 410,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "title",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 265,
+                      "referencedDeclaration": 260,
                       "src": "1762:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -2190,11 +2190,11 @@ export const electionFactoryContractABI = {
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 416,
+                      "id": 411,
                       "name": "_title",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 387,
+                      "referencedDeclaration": 382,
                       "src": "1779:6:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -2207,14 +2207,14 @@ export const electionFactoryContractABI = {
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 418,
+                  "id": 413,
                   "nodeType": "ExpressionStatement",
                   "src": "1762:23:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 424,
+                    "id": 419,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2223,25 +2223,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 419,
+                        "id": 414,
                         "name": "election",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 408,
+                        "referencedDeclaration": 403,
                         "src": "1795:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                          "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                           "typeString": "struct ElectionFactory.Election storage pointer"
                         }
                       },
-                      "id": 421,
+                      "id": 416,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "creationDate",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 267,
+                      "referencedDeclaration": 262,
                       "src": "1795:21:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2254,7 +2254,7 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 422,
+                        "id": 417,
                         "name": "block",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2265,7 +2265,7 @@ export const electionFactoryContractABI = {
                           "typeString": "block"
                         }
                       },
-                      "id": 423,
+                      "id": 418,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2285,14 +2285,14 @@ export const electionFactoryContractABI = {
                       "typeString": "uint256"
                     }
                   },
-                  "id": 425,
+                  "id": 420,
                   "nodeType": "ExpressionStatement",
                   "src": "1795:39:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 430,
+                    "id": 425,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2301,25 +2301,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 426,
+                        "id": 421,
                         "name": "election",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 408,
+                        "referencedDeclaration": 403,
                         "src": "1844:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                          "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                           "typeString": "struct ElectionFactory.Election storage pointer"
                         }
                       },
-                      "id": 428,
+                      "id": 423,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "totalVoters",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 271,
+                      "referencedDeclaration": 266,
                       "src": "1844:20:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2331,7 +2331,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 429,
+                      "id": 424,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2352,14 +2352,14 @@ export const electionFactoryContractABI = {
                       "typeString": "uint256"
                     }
                   },
-                  "id": 431,
+                  "id": 426,
                   "nodeType": "ExpressionStatement",
                   "src": "1844:24:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 436,
+                    "id": 431,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2368,25 +2368,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 432,
+                        "id": 427,
                         "name": "election",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 408,
+                        "referencedDeclaration": 403,
                         "src": "1878:8:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Election_$289_storage_ptr",
+                          "typeIdentifier": "t_struct$_Election_$284_storage_ptr",
                           "typeString": "struct ElectionFactory.Election storage pointer"
                         }
                       },
-                      "id": 434,
+                      "id": 429,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "isOpen",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 273,
+                      "referencedDeclaration": 268,
                       "src": "1878:15:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_bool",
@@ -2398,7 +2398,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "74727565",
-                      "id": 435,
+                      "id": 430,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2419,13 +2419,13 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "id": 437,
+                  "id": 432,
                   "nodeType": "ExpressionStatement",
                   "src": "1878:22:1"
                 },
                 {
                   "body": {
-                    "id": 455,
+                    "id": 450,
                     "nodeType": "Block",
                     "src": "1951:74:1",
                     "statements": [
@@ -2435,11 +2435,11 @@ export const electionFactoryContractABI = {
                           "arguments": [
                             {
                               "argumentTypes": null,
-                              "id": 449,
+                              "id": 444,
                               "name": "electionsCount",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 302,
+                              "referencedDeclaration": 297,
                               "src": "1978:14:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -2450,25 +2450,25 @@ export const electionFactoryContractABI = {
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 450,
+                                "id": 445,
                                 "name": "_candidatesNames",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 390,
+                                "referencedDeclaration": 385,
                                 "src": "1994:16:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_array$_t_string_memory_ptr_$dyn_memory_ptr",
                                   "typeString": "string memory[] memory"
                                 }
                               },
-                              "id": 452,
+                              "id": 447,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 451,
+                                "id": 446,
                                 "name": "i",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 439,
+                                "referencedDeclaration": 434,
                                 "src": "2011:1:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -2498,18 +2498,18 @@ export const electionFactoryContractABI = {
                                 "typeString": "string memory"
                               }
                             ],
-                            "id": 448,
+                            "id": 443,
                             "name": "addCandidate",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 496,
+                            "referencedDeclaration": 491,
                             "src": "1965:12:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_nonpayable$_t_uint256_$_t_string_memory_ptr_$returns$__$",
                               "typeString": "function (uint256,string memory)"
                             }
                           },
-                          "id": 453,
+                          "id": 448,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -2524,7 +2524,7 @@ export const electionFactoryContractABI = {
                             "typeString": "tuple()"
                           }
                         },
-                        "id": 454,
+                        "id": 449,
                         "nodeType": "ExpressionStatement",
                         "src": "1965:49:1"
                       }
@@ -2536,18 +2536,18 @@ export const electionFactoryContractABI = {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     },
-                    "id": 444,
+                    "id": 439,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftExpression": {
                       "argumentTypes": null,
-                      "id": 442,
+                      "id": 437,
                       "name": "i",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 439,
+                      "referencedDeclaration": 434,
                       "src": "1928:1:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2558,11 +2558,11 @@ export const electionFactoryContractABI = {
                     "operator": "<",
                     "rightExpression": {
                       "argumentTypes": null,
-                      "id": 443,
+                      "id": 438,
                       "name": "nbCandidates",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 400,
+                      "referencedDeclaration": 395,
                       "src": "1932:12:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_uint256",
@@ -2575,20 +2575,20 @@ export const electionFactoryContractABI = {
                       "typeString": "bool"
                     }
                   },
-                  "id": 456,
+                  "id": 451,
                   "initializationExpression": {
                     "assignments": [
-                      439
+                      434
                     ],
                     "declarations": [
                       {
                         "constant": false,
-                        "id": 439,
+                        "id": 434,
                         "mutability": "mutable",
                         "name": "i",
                         "nodeType": "VariableDeclaration",
                         "overrides": null,
-                        "scope": 456,
+                        "scope": 451,
                         "src": "1916:6:1",
                         "stateVariable": false,
                         "storageLocation": "default",
@@ -2597,7 +2597,7 @@ export const electionFactoryContractABI = {
                           "typeString": "uint256"
                         },
                         "typeName": {
-                          "id": 438,
+                          "id": 433,
                           "name": "uint",
                           "nodeType": "ElementaryTypeName",
                           "src": "1916:4:1",
@@ -2610,11 +2610,11 @@ export const electionFactoryContractABI = {
                         "visibility": "internal"
                       }
                     ],
-                    "id": 441,
+                    "id": 436,
                     "initialValue": {
                       "argumentTypes": null,
                       "hexValue": "30",
-                      "id": 440,
+                      "id": 435,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2635,7 +2635,7 @@ export const electionFactoryContractABI = {
                   "loopExpression": {
                     "expression": {
                       "argumentTypes": null,
-                      "id": 446,
+                      "id": 441,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2646,11 +2646,11 @@ export const electionFactoryContractABI = {
                       "src": "1946:3:1",
                       "subExpression": {
                         "argumentTypes": null,
-                        "id": 445,
+                        "id": 440,
                         "name": "i",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 439,
+                        "referencedDeclaration": 434,
                         "src": "1946:1:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2662,7 +2662,7 @@ export const electionFactoryContractABI = {
                         "typeString": "uint256"
                       }
                     },
-                    "id": 447,
+                    "id": 442,
                     "nodeType": "ExpressionStatement",
                     "src": "1946:3:1"
                   },
@@ -2672,7 +2672,7 @@ export const electionFactoryContractABI = {
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 462,
+                    "id": 457,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2681,25 +2681,25 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 457,
+                        "id": 452,
                         "name": "electionToOwner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 310,
+                        "referencedDeclaration": 305,
                         "src": "2035:15:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_uint256_$_t_address_$",
                           "typeString": "mapping(uint256 => address)"
                         }
                       },
-                      "id": 459,
+                      "id": 454,
                       "indexExpression": {
                         "argumentTypes": null,
-                        "id": 458,
+                        "id": 453,
                         "name": "electionsCount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 302,
+                        "referencedDeclaration": 297,
                         "src": "2051:14:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_uint256",
@@ -2723,7 +2723,7 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 460,
+                        "id": 455,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -2734,7 +2734,7 @@ export const electionFactoryContractABI = {
                           "typeString": "msg"
                         }
                       },
-                      "id": 461,
+                      "id": 456,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -2754,14 +2754,14 @@ export const electionFactoryContractABI = {
                       "typeString": "address"
                     }
                   },
-                  "id": 463,
+                  "id": 458,
                   "nodeType": "ExpressionStatement",
                   "src": "2035:44:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 469,
+                    "id": 464,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2770,23 +2770,23 @@ export const electionFactoryContractABI = {
                       "argumentTypes": null,
                       "baseExpression": {
                         "argumentTypes": null,
-                        "id": 464,
+                        "id": 459,
                         "name": "ownerElectionCount",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 314,
+                        "referencedDeclaration": 309,
                         "src": "2090:18:1",
                         "typeDescriptions": {
                           "typeIdentifier": "t_mapping$_t_address_$_t_uint256_$",
                           "typeString": "mapping(address => uint256)"
                         }
                       },
-                      "id": 467,
+                      "id": 462,
                       "indexExpression": {
                         "argumentTypes": null,
                         "expression": {
                           "argumentTypes": null,
-                          "id": 465,
+                          "id": 460,
                           "name": "msg",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
@@ -2797,7 +2797,7 @@ export const electionFactoryContractABI = {
                             "typeString": "msg"
                           }
                         },
-                        "id": 466,
+                        "id": 461,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -2827,7 +2827,7 @@ export const electionFactoryContractABI = {
                     "rightHandSide": {
                       "argumentTypes": null,
                       "hexValue": "31",
-                      "id": 468,
+                      "id": 463,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": true,
@@ -2848,26 +2848,26 @@ export const electionFactoryContractABI = {
                       "typeString": "uint256"
                     }
                   },
-                  "id": 470,
+                  "id": 465,
                   "nodeType": "ExpressionStatement",
                   "src": "2090:35:1"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 471,
+                    "id": 466,
                     "name": "electionsCount",
                     "nodeType": "Identifier",
                     "overloadedDeclarations": [],
-                    "referencedDeclaration": 302,
+                    "referencedDeclaration": 297,
                     "src": "2143:14:1",
                     "typeDescriptions": {
                       "typeIdentifier": "t_uint256",
                       "typeString": "uint256"
                     }
                   },
-                  "functionReturnParameters": 398,
-                  "id": 472,
+                  "functionReturnParameters": 393,
+                  "id": 467,
                   "nodeType": "Return",
                   "src": "2136:21:1"
                 }
@@ -2875,7 +2875,7 @@ export const electionFactoryContractABI = {
             },
             "documentation": null,
             "functionSelector": "349813b2",
-            "id": 474,
+            "id": 469,
             "implemented": true,
             "kind": "function",
             "modifiers": [
@@ -2885,7 +2885,7 @@ export const electionFactoryContractABI = {
                     "argumentTypes": null,
                     "expression": {
                       "argumentTypes": null,
-                      "id": 393,
+                      "id": 388,
                       "name": "msg",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
@@ -2896,7 +2896,7 @@ export const electionFactoryContractABI = {
                         "typeString": "msg"
                       }
                     },
-                    "id": 394,
+                    "id": 389,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -2911,14 +2911,14 @@ export const electionFactoryContractABI = {
                     }
                   }
                 ],
-                "id": 395,
+                "id": 390,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 392,
+                  "id": 387,
                   "name": "isAdmin",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 333,
+                  "referencedDeclaration": 328,
                   "src": "1575:7:1",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$_t_address_$",
@@ -2933,17 +2933,17 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 391,
+              "id": 386,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 387,
+                  "id": 382,
                   "mutability": "mutable",
                   "name": "_title",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 474,
+                  "scope": 469,
                   "src": "1510:20:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2952,7 +2952,7 @@ export const electionFactoryContractABI = {
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 386,
+                    "id": 381,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "1510:6:1",
@@ -2966,12 +2966,12 @@ export const electionFactoryContractABI = {
                 },
                 {
                   "constant": false,
-                  "id": 390,
+                  "id": 385,
                   "mutability": "mutable",
                   "name": "_candidatesNames",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 474,
+                  "scope": 469,
                   "src": "1532:32:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -2981,7 +2981,7 @@ export const electionFactoryContractABI = {
                   },
                   "typeName": {
                     "baseType": {
-                      "id": 388,
+                      "id": 383,
                       "name": "string",
                       "nodeType": "ElementaryTypeName",
                       "src": "1532:6:1",
@@ -2990,7 +2990,7 @@ export const electionFactoryContractABI = {
                         "typeString": "string"
                       }
                     },
-                    "id": 389,
+                    "id": 384,
                     "length": null,
                     "nodeType": "ArrayTypeName",
                     "src": "1532:8:1",
@@ -3006,17 +3006,17 @@ export const electionFactoryContractABI = {
               "src": "1509:56:1"
             },
             "returnParameters": {
-              "id": 398,
+              "id": 393,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 397,
+                  "id": 392,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 474,
+                  "scope": 469,
                   "src": "1604:4:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3025,7 +3025,7 @@ export const electionFactoryContractABI = {
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 396,
+                    "id": 391,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "1604:4:1",
@@ -3040,7 +3040,7 @@ export const electionFactoryContractABI = {
               ],
               "src": "1603:6:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "1486:678:1",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -3048,14 +3048,14 @@ export const electionFactoryContractABI = {
           },
           {
             "body": {
-              "id": 495,
+              "id": 490,
               "nodeType": "Block",
               "src": "2247:114:1",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 493,
+                    "id": 488,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -3070,25 +3070,25 @@ export const electionFactoryContractABI = {
                             "argumentTypes": null,
                             "baseExpression": {
                               "argumentTypes": null,
-                              "id": 481,
+                              "id": 476,
                               "name": "elections",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 306,
+                              "referencedDeclaration": 301,
                               "src": "2257:9:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$289_storage_$",
+                                "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$284_storage_$",
                                 "typeString": "mapping(uint256 => struct ElectionFactory.Election storage ref)"
                               }
                             },
-                            "id": 483,
+                            "id": 478,
                             "indexExpression": {
                               "argumentTypes": null,
-                              "id": 482,
+                              "id": 477,
                               "name": "_electionId",
                               "nodeType": "Identifier",
                               "overloadedDeclarations": [],
-                              "referencedDeclaration": 476,
+                              "referencedDeclaration": 471,
                               "src": "2267:11:1",
                               "typeDescriptions": {
                                 "typeIdentifier": "t_uint256",
@@ -3102,28 +3102,28 @@ export const electionFactoryContractABI = {
                             "nodeType": "IndexAccess",
                             "src": "2257:22:1",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_struct$_Election_$289_storage",
+                              "typeIdentifier": "t_struct$_Election_$284_storage",
                               "typeString": "struct ElectionFactory.Election storage ref"
                             }
                           },
-                          "id": 484,
+                          "id": 479,
                           "isConstant": false,
                           "isLValue": true,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "candidates",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 279,
+                          "referencedDeclaration": 274,
                           "src": "2257:33:1",
                           "typeDescriptions": {
-                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$300_storage_$",
+                            "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Candidate_$295_storage_$",
                             "typeString": "mapping(uint256 => struct ElectionFactory.Candidate storage ref)"
                           }
                         },
-                        "id": 490,
+                        "id": 485,
                         "indexExpression": {
                           "argumentTypes": null,
-                          "id": 489,
+                          "id": 484,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -3138,25 +3138,25 @@ export const electionFactoryContractABI = {
                               "argumentTypes": null,
                               "baseExpression": {
                                 "argumentTypes": null,
-                                "id": 485,
+                                "id": 480,
                                 "name": "elections",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 306,
+                                "referencedDeclaration": 301,
                                 "src": "2291:9:1",
                                 "typeDescriptions": {
-                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$289_storage_$",
+                                  "typeIdentifier": "t_mapping$_t_uint256_$_t_struct$_Election_$284_storage_$",
                                   "typeString": "mapping(uint256 => struct ElectionFactory.Election storage ref)"
                                 }
                               },
-                              "id": 487,
+                              "id": 482,
                               "indexExpression": {
                                 "argumentTypes": null,
-                                "id": 486,
+                                "id": 481,
                                 "name": "_electionId",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 476,
+                                "referencedDeclaration": 471,
                                 "src": "2301:11:1",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_uint256",
@@ -3170,18 +3170,18 @@ export const electionFactoryContractABI = {
                               "nodeType": "IndexAccess",
                               "src": "2291:22:1",
                               "typeDescriptions": {
-                                "typeIdentifier": "t_struct$_Election_$289_storage",
+                                "typeIdentifier": "t_struct$_Election_$284_storage",
                                 "typeString": "struct ElectionFactory.Election storage ref"
                               }
                             },
-                            "id": 488,
+                            "id": 483,
                             "isConstant": false,
                             "isLValue": true,
                             "isPure": false,
                             "lValueRequested": true,
                             "memberName": "candidatesCount",
                             "nodeType": "MemberAccess",
-                            "referencedDeclaration": 275,
+                            "referencedDeclaration": 270,
                             "src": "2291:38:1",
                             "typeDescriptions": {
                               "typeIdentifier": "t_uint256",
@@ -3200,18 +3200,18 @@ export const electionFactoryContractABI = {
                         "nodeType": "IndexAccess",
                         "src": "2257:75:1",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_struct$_Candidate_$300_storage",
+                          "typeIdentifier": "t_struct$_Candidate_$295_storage",
                           "typeString": "struct ElectionFactory.Candidate storage ref"
                         }
                       },
-                      "id": 491,
+                      "id": 486,
                       "isConstant": false,
                       "isLValue": true,
                       "isPure": false,
                       "lValueRequested": true,
                       "memberName": "name",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 291,
+                      "referencedDeclaration": 286,
                       "src": "2257:80:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_storage",
@@ -3222,11 +3222,11 @@ export const electionFactoryContractABI = {
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 492,
+                      "id": 487,
                       "name": "_candidateName",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 478,
+                      "referencedDeclaration": 473,
                       "src": "2340:14:1",
                       "typeDescriptions": {
                         "typeIdentifier": "t_string_memory_ptr",
@@ -3239,7 +3239,7 @@ export const electionFactoryContractABI = {
                       "typeString": "string storage ref"
                     }
                   },
-                  "id": 494,
+                  "id": 489,
                   "nodeType": "ExpressionStatement",
                   "src": "2257:97:1"
                 }
@@ -3247,7 +3247,7 @@ export const electionFactoryContractABI = {
             },
             "documentation": null,
             "functionSelector": "1750a3d0",
-            "id": 496,
+            "id": 491,
             "implemented": true,
             "kind": "function",
             "modifiers": [],
@@ -3255,17 +3255,17 @@ export const electionFactoryContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 479,
+              "id": 474,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 476,
+                  "id": 471,
                   "mutability": "mutable",
                   "name": "_electionId",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 496,
+                  "scope": 491,
                   "src": "2192:16:1",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -3274,7 +3274,7 @@ export const electionFactoryContractABI = {
                     "typeString": "uint256"
                   },
                   "typeName": {
-                    "id": 475,
+                    "id": 470,
                     "name": "uint",
                     "nodeType": "ElementaryTypeName",
                     "src": "2192:4:1",
@@ -3288,12 +3288,12 @@ export const electionFactoryContractABI = {
                 },
                 {
                   "constant": false,
-                  "id": 478,
+                  "id": 473,
                   "mutability": "mutable",
                   "name": "_candidateName",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 496,
+                  "scope": 491,
                   "src": "2210:28:1",
                   "stateVariable": false,
                   "storageLocation": "memory",
@@ -3302,7 +3302,7 @@ export const electionFactoryContractABI = {
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 477,
+                    "id": 472,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
                     "src": "2210:6:1",
@@ -3318,19 +3318,19 @@ export const electionFactoryContractABI = {
               "src": "2191:48:1"
             },
             "returnParameters": {
-              "id": 480,
+              "id": 475,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "2247:0:1"
             },
-            "scope": 497,
+            "scope": 492,
             "src": "2170:191:1",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 498,
+        "scope": 493,
         "src": "126:2237:1"
       }
     ],
@@ -3341,7 +3341,7 @@ export const electionFactoryContractABI = {
       "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ElectionFactory.sol",
       "exportedSymbols": {
         "ElectionFactory": [
-          497
+          492
         ]
       },
       "license": "MIT"
@@ -3359,7 +3359,7 @@ export const electionFactoryContractABI = {
             ".0"
           ]
         },
-        "id": 249,
+        "id": 244,
         "name": "PragmaDirective",
         "src": "32:33:1"
       },
@@ -3370,22 +3370,22 @@ export const electionFactoryContractABI = {
             "ABIEncoderV2"
           ]
         },
-        "id": 250,
+        "id": 245,
         "name": "PragmaDirective",
         "src": "66:33:1"
       },
       {
         "attributes": {
-          "SourceUnit": 1045,
+          "SourceUnit": 1040,
           "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ownable.sol",
           "file": "./ownable.sol",
-          "scope": 498,
+          "scope": 493,
           "symbolAliases": [
             null
           ],
           "unitAlias": ""
         },
-        "id": 251,
+        "id": 246,
         "name": "ImportDirective",
         "src": "101:23:1"
       },
@@ -3393,17 +3393,17 @@ export const electionFactoryContractABI = {
         "attributes": {
           "abstract": false,
           "contractDependencies": [
-            1044
+            1039
           ],
           "contractKind": "contract",
           "documentation": null,
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            497,
-            1044
+            492,
+            1039
           ],
           "name": "ElectionFactory",
-          "scope": 498
+          "scope": 493
         },
         "children": [
           {
@@ -3415,15 +3415,15 @@ export const electionFactoryContractABI = {
                 "attributes": {
                   "contractScope": null,
                   "name": "Ownable",
-                  "referencedDeclaration": 1044,
+                  "referencedDeclaration": 1039,
                   "type": "contract Ownable"
                 },
-                "id": 252,
+                "id": 247,
                 "name": "UserDefinedTypeName",
                 "src": "154:7:1"
               }
             ],
-            "id": 253,
+            "id": 248,
             "name": "InheritanceSpecifier",
             "src": "154:7:1"
           },
@@ -3438,7 +3438,7 @@ export const electionFactoryContractABI = {
               ],
               "name": "",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -3451,7 +3451,7 @@ export const electionFactoryContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 254,
+                "id": 249,
                 "name": "ParameterList",
                 "src": "180:2:1"
               },
@@ -3462,7 +3462,7 @@ export const electionFactoryContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 255,
+                "id": 250,
                 "name": "ParameterList",
                 "src": "183:0:1"
               },
@@ -3497,11 +3497,11 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 318,
+                                  "referencedDeclaration": 313,
                                   "type": "mapping(address => bool)",
                                   "value": "listAdmin"
                                 },
-                                "id": 256,
+                                "id": 251,
                                 "name": "Identifier",
                                 "src": "193:9:1"
                               },
@@ -3511,16 +3511,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 988,
+                                  "referencedDeclaration": 983,
                                   "type": "address",
                                   "value": "owner"
                                 },
-                                "id": 257,
+                                "id": 252,
                                 "name": "Identifier",
                                 "src": "203:5:1"
                               }
                             ],
-                            "id": 258,
+                            "id": 253,
                             "name": "IndexAccess",
                             "src": "193:16:1"
                           },
@@ -3537,27 +3537,27 @@ export const electionFactoryContractABI = {
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 259,
+                            "id": 254,
                             "name": "Literal",
                             "src": "212:4:1"
                           }
                         ],
-                        "id": 260,
+                        "id": 255,
                         "name": "Assignment",
                         "src": "193:23:1"
                       }
                     ],
-                    "id": 261,
+                    "id": 256,
                     "name": "ExpressionStatement",
                     "src": "193:23:1"
                   }
                 ],
-                "id": 262,
+                "id": 257,
                 "name": "Block",
                 "src": "183:40:1"
               }
             ],
-            "id": 263,
+            "id": 258,
             "name": "FunctionDefinition",
             "src": "168:55:1"
           },
@@ -3565,7 +3565,7 @@ export const electionFactoryContractABI = {
             "attributes": {
               "canonicalName": "ElectionFactory.Election",
               "name": "Election",
-              "scope": 497,
+              "scope": 492,
               "visibility": "public"
             },
             "children": [
@@ -3575,7 +3575,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "title",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3588,12 +3588,12 @@ export const electionFactoryContractABI = {
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 264,
+                    "id": 259,
                     "name": "ElementaryTypeName",
                     "src": "255:6:1"
                   }
                 ],
-                "id": 265,
+                "id": 260,
                 "name": "VariableDeclaration",
                 "src": "255:12:1"
               },
@@ -3603,7 +3603,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "creationDate",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3616,12 +3616,12 @@ export const electionFactoryContractABI = {
                       "name": "uint256",
                       "type": "uint256"
                     },
-                    "id": 266,
+                    "id": 261,
                     "name": "ElementaryTypeName",
                     "src": "277:7:1"
                   }
                 ],
-                "id": 267,
+                "id": 262,
                 "name": "VariableDeclaration",
                 "src": "277:20:1"
               },
@@ -3631,7 +3631,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "closingDate",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3644,12 +3644,12 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 268,
+                    "id": 263,
                     "name": "ElementaryTypeName",
                     "src": "307:4:1"
                   }
                 ],
-                "id": 269,
+                "id": 264,
                 "name": "VariableDeclaration",
                 "src": "307:16:1"
               },
@@ -3659,7 +3659,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "totalVoters",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3672,12 +3672,12 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 270,
+                    "id": 265,
                     "name": "ElementaryTypeName",
                     "src": "333:4:1"
                   }
                 ],
-                "id": 271,
+                "id": 266,
                 "name": "VariableDeclaration",
                 "src": "333:16:1"
               },
@@ -3687,7 +3687,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "isOpen",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "bool",
@@ -3700,12 +3700,12 @@ export const electionFactoryContractABI = {
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 272,
+                    "id": 267,
                     "name": "ElementaryTypeName",
                     "src": "359:4:1"
                   }
                 ],
-                "id": 273,
+                "id": 268,
                 "name": "VariableDeclaration",
                 "src": "359:11:1"
               },
@@ -3715,7 +3715,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "candidatesCount",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3728,12 +3728,12 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 274,
+                    "id": 269,
                     "name": "ElementaryTypeName",
                     "src": "381:4:1"
                   }
                 ],
-                "id": 275,
+                "id": 270,
                 "name": "VariableDeclaration",
                 "src": "381:20:1"
               },
@@ -3743,7 +3743,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "candidates",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "mapping(uint256 => struct ElectionFactory.Candidate)",
@@ -3761,7 +3761,7 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 276,
+                        "id": 271,
                         "name": "ElementaryTypeName",
                         "src": "420:4:1"
                       },
@@ -3769,20 +3769,20 @@ export const electionFactoryContractABI = {
                         "attributes": {
                           "contractScope": null,
                           "name": "Candidate",
-                          "referencedDeclaration": 300,
+                          "referencedDeclaration": 295,
                           "type": "struct ElectionFactory.Candidate"
                         },
-                        "id": 277,
+                        "id": 272,
                         "name": "UserDefinedTypeName",
                         "src": "428:9:1"
                       }
                     ],
-                    "id": 278,
+                    "id": 273,
                     "name": "Mapping",
                     "src": "411:27:1"
                   }
                 ],
-                "id": 279,
+                "id": 274,
                 "name": "VariableDeclaration",
                 "src": "411:38:1"
               },
@@ -3792,7 +3792,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "voters",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "mapping(address => bool)",
@@ -3810,7 +3810,7 @@ export const electionFactoryContractABI = {
                           "name": "address",
                           "type": "address"
                         },
-                        "id": 280,
+                        "id": 275,
                         "name": "ElementaryTypeName",
                         "src": "468:7:1"
                       },
@@ -3819,17 +3819,17 @@ export const electionFactoryContractABI = {
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 281,
+                        "id": 276,
                         "name": "ElementaryTypeName",
                         "src": "479:4:1"
                       }
                     ],
-                    "id": 282,
+                    "id": 277,
                     "name": "Mapping",
                     "src": "459:25:1"
                   }
                 ],
-                "id": 283,
+                "id": 278,
                 "name": "VariableDeclaration",
                 "src": "459:32:1"
               },
@@ -3839,7 +3839,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "winners",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256[]",
@@ -3858,17 +3858,17 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 284,
+                        "id": 279,
                         "name": "ElementaryTypeName",
                         "src": "501:4:1"
                       }
                     ],
-                    "id": 285,
+                    "id": 280,
                     "name": "ArrayTypeName",
                     "src": "501:6:1"
                   }
                 ],
-                "id": 286,
+                "id": 281,
                 "name": "VariableDeclaration",
                 "src": "501:14:1"
               },
@@ -3878,7 +3878,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "winner",
                   "overrides": null,
-                  "scope": 289,
+                  "scope": 284,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -3891,17 +3891,17 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 287,
+                    "id": 282,
                     "name": "ElementaryTypeName",
                     "src": "525:4:1"
                   }
                 ],
-                "id": 288,
+                "id": 283,
                 "name": "VariableDeclaration",
                 "src": "525:11:1"
               }
             ],
-            "id": 289,
+            "id": 284,
             "name": "StructDefinition",
             "src": "229:314:1"
           },
@@ -3909,7 +3909,7 @@ export const electionFactoryContractABI = {
             "attributes": {
               "canonicalName": "ElectionFactory.Candidate",
               "name": "Candidate",
-              "scope": 497,
+              "scope": 492,
               "visibility": "public"
             },
             "children": [
@@ -3919,7 +3919,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "name",
                   "overrides": null,
-                  "scope": 300,
+                  "scope": 295,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "string",
@@ -3932,12 +3932,12 @@ export const electionFactoryContractABI = {
                       "name": "string",
                       "type": "string"
                     },
-                    "id": 290,
+                    "id": 285,
                     "name": "ElementaryTypeName",
                     "src": "576:6:1"
                   }
                 ],
-                "id": 291,
+                "id": 286,
                 "name": "VariableDeclaration",
                 "src": "576:11:1"
               },
@@ -3947,7 +3947,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "notes",
                   "overrides": null,
-                  "scope": 300,
+                  "scope": 295,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "mapping(uint256 => uint256)",
@@ -3965,7 +3965,7 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 292,
+                        "id": 287,
                         "name": "ElementaryTypeName",
                         "src": "606:4:1"
                       },
@@ -3974,17 +3974,17 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 293,
+                        "id": 288,
                         "name": "ElementaryTypeName",
                         "src": "614:4:1"
                       }
                     ],
-                    "id": 294,
+                    "id": 289,
                     "name": "Mapping",
                     "src": "597:22:1"
                   }
                 ],
-                "id": 295,
+                "id": 290,
                 "name": "VariableDeclaration",
                 "src": "597:28:1"
               },
@@ -3994,7 +3994,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "percent",
                   "overrides": null,
-                  "scope": 300,
+                  "scope": 295,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -4007,12 +4007,12 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 296,
+                    "id": 291,
                     "name": "ElementaryTypeName",
                     "src": "635:4:1"
                   }
                 ],
-                "id": 297,
+                "id": 292,
                 "name": "VariableDeclaration",
                 "src": "635:12:1"
               },
@@ -4022,7 +4022,7 @@ export const electionFactoryContractABI = {
                   "mutability": "mutable",
                   "name": "averageNote",
                   "overrides": null,
-                  "scope": 300,
+                  "scope": 295,
                   "stateVariable": false,
                   "storageLocation": "default",
                   "type": "uint256",
@@ -4035,17 +4035,17 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 298,
+                    "id": 293,
                     "name": "ElementaryTypeName",
                     "src": "657:4:1"
                   }
                 ],
-                "id": 299,
+                "id": 294,
                 "name": "VariableDeclaration",
                 "src": "657:16:1"
               }
             ],
-            "id": 300,
+            "id": 295,
             "name": "StructDefinition",
             "src": "549:131:1"
           },
@@ -4056,7 +4056,7 @@ export const electionFactoryContractABI = {
               "mutability": "mutable",
               "name": "electionsCount",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "uint256",
@@ -4069,12 +4069,12 @@ export const electionFactoryContractABI = {
                   "name": "uint",
                   "type": "uint256"
                 },
-                "id": 301,
+                "id": 296,
                 "name": "ElementaryTypeName",
                 "src": "685:4:1"
               }
             ],
-            "id": 302,
+            "id": 297,
             "name": "VariableDeclaration",
             "src": "685:26:1"
           },
@@ -4085,7 +4085,7 @@ export const electionFactoryContractABI = {
               "mutability": "mutable",
               "name": "elections",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => struct ElectionFactory.Election)",
@@ -4103,7 +4103,7 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 303,
+                    "id": 298,
                     "name": "ElementaryTypeName",
                     "src": "726:4:1"
                   },
@@ -4111,20 +4111,20 @@ export const electionFactoryContractABI = {
                     "attributes": {
                       "contractScope": null,
                       "name": "Election",
-                      "referencedDeclaration": 289,
+                      "referencedDeclaration": 284,
                       "type": "struct ElectionFactory.Election"
                     },
-                    "id": 304,
+                    "id": 299,
                     "name": "UserDefinedTypeName",
                     "src": "734:8:1"
                   }
                 ],
-                "id": 305,
+                "id": 300,
                 "name": "Mapping",
                 "src": "717:26:1"
               }
             ],
-            "id": 306,
+            "id": 301,
             "name": "VariableDeclaration",
             "src": "717:43:1"
           },
@@ -4134,7 +4134,7 @@ export const electionFactoryContractABI = {
               "mutability": "mutable",
               "name": "electionToOwner",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(uint256 => address)",
@@ -4152,7 +4152,7 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 307,
+                    "id": 302,
                     "name": "ElementaryTypeName",
                     "src": "776:4:1"
                   },
@@ -4162,17 +4162,17 @@ export const electionFactoryContractABI = {
                       "stateMutability": "nonpayable",
                       "type": "address"
                     },
-                    "id": 308,
+                    "id": 303,
                     "name": "ElementaryTypeName",
                     "src": "784:7:1"
                   }
                 ],
-                "id": 309,
+                "id": 304,
                 "name": "Mapping",
                 "src": "767:25:1"
               }
             ],
-            "id": 310,
+            "id": 305,
             "name": "VariableDeclaration",
             "src": "767:41:1"
           },
@@ -4182,7 +4182,7 @@ export const electionFactoryContractABI = {
               "mutability": "mutable",
               "name": "ownerElectionCount",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => uint256)",
@@ -4200,7 +4200,7 @@ export const electionFactoryContractABI = {
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 311,
+                    "id": 306,
                     "name": "ElementaryTypeName",
                     "src": "823:7:1"
                   },
@@ -4209,17 +4209,17 @@ export const electionFactoryContractABI = {
                       "name": "uint",
                       "type": "uint256"
                     },
-                    "id": 312,
+                    "id": 307,
                     "name": "ElementaryTypeName",
                     "src": "834:4:1"
                   }
                 ],
-                "id": 313,
+                "id": 308,
                 "name": "Mapping",
                 "src": "814:25:1"
               }
             ],
-            "id": 314,
+            "id": 309,
             "name": "VariableDeclaration",
             "src": "814:44:1"
           },
@@ -4229,7 +4229,7 @@ export const electionFactoryContractABI = {
               "mutability": "mutable",
               "name": "listAdmin",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "mapping(address => bool)",
@@ -4247,7 +4247,7 @@ export const electionFactoryContractABI = {
                       "name": "address",
                       "type": "address"
                     },
-                    "id": 315,
+                    "id": 310,
                     "name": "ElementaryTypeName",
                     "src": "873:7:1"
                   },
@@ -4256,17 +4256,17 @@ export const electionFactoryContractABI = {
                       "name": "bool",
                       "type": "bool"
                     },
-                    "id": 316,
+                    "id": 311,
                     "name": "ElementaryTypeName",
                     "src": "884:4:1"
                   }
                 ],
-                "id": 317,
+                "id": 312,
                 "name": "Mapping",
                 "src": "864:25:1"
               }
             ],
-            "id": 318,
+            "id": 313,
             "name": "VariableDeclaration",
             "src": "864:35:1"
           },
@@ -4287,7 +4287,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_userAddress",
                       "overrides": null,
-                      "scope": 333,
+                      "scope": 328,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4301,17 +4301,17 @@ export const electionFactoryContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 319,
+                        "id": 314,
                         "name": "ElementaryTypeName",
                         "src": "923:7:1"
                       }
                     ],
-                    "id": 320,
+                    "id": 315,
                     "name": "VariableDeclaration",
                     "src": "923:20:1"
                   }
                 ],
-                "id": 321,
+                "id": 316,
                 "name": "ParameterList",
                 "src": "922:22:1"
               },
@@ -4355,7 +4355,7 @@ export const electionFactoryContractABI = {
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 322,
+                            "id": 317,
                             "name": "Identifier",
                             "src": "955:7:1"
                           },
@@ -4390,11 +4390,11 @@ export const electionFactoryContractABI = {
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 318,
+                                      "referencedDeclaration": 313,
                                       "type": "mapping(address => bool)",
                                       "value": "listAdmin"
                                     },
-                                    "id": 323,
+                                    "id": 318,
                                     "name": "Identifier",
                                     "src": "964:9:1"
                                   },
@@ -4404,16 +4404,16 @@ export const electionFactoryContractABI = {
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 320,
+                                      "referencedDeclaration": 315,
                                       "type": "address",
                                       "value": "_userAddress"
                                     },
-                                    "id": 324,
+                                    "id": 319,
                                     "name": "Identifier",
                                     "src": "974:12:1"
                                   }
                                 ],
-                                "id": 325,
+                                "id": 320,
                                 "name": "IndexAccess",
                                 "src": "964:23:1"
                               },
@@ -4430,12 +4430,12 @@ export const electionFactoryContractABI = {
                                   "type": "bool",
                                   "value": "true"
                                 },
-                                "id": 326,
+                                "id": 321,
                                 "name": "Literal",
                                 "src": "991:4:1"
                               }
                             ],
-                            "id": 327,
+                            "id": 322,
                             "name": "BinaryOperation",
                             "src": "964:31:1"
                           },
@@ -4452,32 +4452,32 @@ export const electionFactoryContractABI = {
                               "type": "literal_string \"You are not an admin\"",
                               "value": "You are not an admin"
                             },
-                            "id": 328,
+                            "id": 323,
                             "name": "Literal",
                             "src": "997:22:1"
                           }
                         ],
-                        "id": 329,
+                        "id": 324,
                         "name": "FunctionCall",
                         "src": "955:65:1"
                       }
                     ],
-                    "id": 330,
+                    "id": 325,
                     "name": "ExpressionStatement",
                     "src": "955:65:1"
                   },
                   {
-                    "id": 331,
+                    "id": 326,
                     "name": "PlaceholderStatement",
                     "src": "1030:1:1"
                   }
                 ],
-                "id": 332,
+                "id": 327,
                 "name": "Block",
                 "src": "945:93:1"
               }
             ],
-            "id": 333,
+            "id": 328,
             "name": "ModifierDefinition",
             "src": "906:132:1"
           },
@@ -4490,7 +4490,7 @@ export const electionFactoryContractABI = {
               "kind": "function",
               "name": "addAdmin",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -4504,7 +4504,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_userAddress",
                       "overrides": null,
-                      "scope": 349,
+                      "scope": 344,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4518,17 +4518,17 @@ export const electionFactoryContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 334,
+                        "id": 329,
                         "name": "ElementaryTypeName",
                         "src": "1062:7:1"
                       }
                     ],
-                    "id": 335,
+                    "id": 330,
                     "name": "VariableDeclaration",
                     "src": "1062:20:1"
                   }
                 ],
-                "id": 336,
+                "id": 331,
                 "name": "ParameterList",
                 "src": "1061:22:1"
               },
@@ -4539,7 +4539,7 @@ export const electionFactoryContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 341,
+                "id": 336,
                 "name": "ParameterList",
                 "src": "1113:0:1"
               },
@@ -4551,11 +4551,11 @@ export const electionFactoryContractABI = {
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 333,
+                      "referencedDeclaration": 328,
                       "type": "modifier (address)",
                       "value": "isAdmin"
                     },
-                    "id": 337,
+                    "id": 332,
                     "name": "Identifier",
                     "src": "1093:7:1"
                   },
@@ -4581,17 +4581,17 @@ export const electionFactoryContractABI = {
                           "type": "msg",
                           "value": "msg"
                         },
-                        "id": 338,
+                        "id": 333,
                         "name": "Identifier",
                         "src": "1101:3:1"
                       }
                     ],
-                    "id": 339,
+                    "id": 334,
                     "name": "MemberAccess",
                     "src": "1101:10:1"
                   }
                 ],
-                "id": 340,
+                "id": 335,
                 "name": "ModifierInvocation",
                 "src": "1093:19:1"
               },
@@ -4626,11 +4626,11 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 318,
+                                  "referencedDeclaration": 313,
                                   "type": "mapping(address => bool)",
                                   "value": "listAdmin"
                                 },
-                                "id": 342,
+                                "id": 337,
                                 "name": "Identifier",
                                 "src": "1123:9:1"
                               },
@@ -4640,16 +4640,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 335,
+                                  "referencedDeclaration": 330,
                                   "type": "address",
                                   "value": "_userAddress"
                                 },
-                                "id": 343,
+                                "id": 338,
                                 "name": "Identifier",
                                 "src": "1133:12:1"
                               }
                             ],
-                            "id": 344,
+                            "id": 339,
                             "name": "IndexAccess",
                             "src": "1123:23:1"
                           },
@@ -4666,27 +4666,27 @@ export const electionFactoryContractABI = {
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 345,
+                            "id": 340,
                             "name": "Literal",
                             "src": "1149:4:1"
                           }
                         ],
-                        "id": 346,
+                        "id": 341,
                         "name": "Assignment",
                         "src": "1123:30:1"
                       }
                     ],
-                    "id": 347,
+                    "id": 342,
                     "name": "ExpressionStatement",
                     "src": "1123:30:1"
                   }
                 ],
-                "id": 348,
+                "id": 343,
                 "name": "Block",
                 "src": "1113:47:1"
               }
             ],
-            "id": 349,
+            "id": 344,
             "name": "FunctionDefinition",
             "src": "1044:116:1"
           },
@@ -4699,7 +4699,7 @@ export const electionFactoryContractABI = {
               "kind": "function",
               "name": "deleteAdmin",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -4713,7 +4713,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_userAddress",
                       "overrides": null,
-                      "scope": 373,
+                      "scope": 368,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -4727,17 +4727,17 @@ export const electionFactoryContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 350,
+                        "id": 345,
                         "name": "ElementaryTypeName",
                         "src": "1187:7:1"
                       }
                     ],
-                    "id": 351,
+                    "id": 346,
                     "name": "VariableDeclaration",
                     "src": "1187:20:1"
                   }
                 ],
-                "id": 352,
+                "id": 347,
                 "name": "ParameterList",
                 "src": "1186:22:1"
               },
@@ -4748,7 +4748,7 @@ export const electionFactoryContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 357,
+                "id": 352,
                 "name": "ParameterList",
                 "src": "1238:0:1"
               },
@@ -4760,11 +4760,11 @@ export const electionFactoryContractABI = {
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 333,
+                      "referencedDeclaration": 328,
                       "type": "modifier (address)",
                       "value": "isAdmin"
                     },
-                    "id": 353,
+                    "id": 348,
                     "name": "Identifier",
                     "src": "1218:7:1"
                   },
@@ -4790,17 +4790,17 @@ export const electionFactoryContractABI = {
                           "type": "msg",
                           "value": "msg"
                         },
-                        "id": 354,
+                        "id": 349,
                         "name": "Identifier",
                         "src": "1226:3:1"
                       }
                     ],
-                    "id": 355,
+                    "id": 350,
                     "name": "MemberAccess",
                     "src": "1226:10:1"
                   }
                 ],
-                "id": 356,
+                "id": 351,
                 "name": "ModifierInvocation",
                 "src": "1218:19:1"
               },
@@ -4844,7 +4844,7 @@ export const electionFactoryContractABI = {
                               "type": "function (bool,string memory) pure",
                               "value": "require"
                             },
-                            "id": 358,
+                            "id": 353,
                             "name": "Identifier",
                             "src": "1248:7:1"
                           },
@@ -4885,12 +4885,12 @@ export const electionFactoryContractABI = {
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 359,
+                                    "id": 354,
                                     "name": "Identifier",
                                     "src": "1256:3:1"
                                   }
                                 ],
-                                "id": 360,
+                                "id": 355,
                                 "name": "MemberAccess",
                                 "src": "1256:10:1"
                               },
@@ -4900,16 +4900,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 988,
+                                  "referencedDeclaration": 983,
                                   "type": "address",
                                   "value": "owner"
                                 },
-                                "id": 361,
+                                "id": 356,
                                 "name": "Identifier",
                                 "src": "1270:5:1"
                               }
                             ],
-                            "id": 362,
+                            "id": 357,
                             "name": "BinaryOperation",
                             "src": "1256:19:1"
                           },
@@ -4926,17 +4926,17 @@ export const electionFactoryContractABI = {
                               "type": "literal_string \"Cannot remove owner from admins\"",
                               "value": "Cannot remove owner from admins"
                             },
-                            "id": 363,
+                            "id": 358,
                             "name": "Literal",
                             "src": "1277:33:1"
                           }
                         ],
-                        "id": 364,
+                        "id": 359,
                         "name": "FunctionCall",
                         "src": "1248:63:1"
                       }
                     ],
-                    "id": 365,
+                    "id": 360,
                     "name": "ExpressionStatement",
                     "src": "1248:63:1"
                   },
@@ -4969,11 +4969,11 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 318,
+                                  "referencedDeclaration": 313,
                                   "type": "mapping(address => bool)",
                                   "value": "listAdmin"
                                 },
-                                "id": 366,
+                                "id": 361,
                                 "name": "Identifier",
                                 "src": "1321:9:1"
                               },
@@ -4983,16 +4983,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 351,
+                                  "referencedDeclaration": 346,
                                   "type": "address",
                                   "value": "_userAddress"
                                 },
-                                "id": 367,
+                                "id": 362,
                                 "name": "Identifier",
                                 "src": "1331:12:1"
                               }
                             ],
-                            "id": 368,
+                            "id": 363,
                             "name": "IndexAccess",
                             "src": "1321:23:1"
                           },
@@ -5009,27 +5009,27 @@ export const electionFactoryContractABI = {
                               "type": "bool",
                               "value": "false"
                             },
-                            "id": 369,
+                            "id": 364,
                             "name": "Literal",
                             "src": "1347:5:1"
                           }
                         ],
-                        "id": 370,
+                        "id": 365,
                         "name": "Assignment",
                         "src": "1321:31:1"
                       }
                     ],
-                    "id": 371,
+                    "id": 366,
                     "name": "ExpressionStatement",
                     "src": "1321:31:1"
                   }
                 ],
-                "id": 372,
+                "id": 367,
                 "name": "Block",
                 "src": "1238:121:1"
               }
             ],
-            "id": 373,
+            "id": 368,
             "name": "FunctionDefinition",
             "src": "1166:193:1"
           },
@@ -5045,7 +5045,7 @@ export const electionFactoryContractABI = {
               ],
               "name": "isUserAdmin",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "view",
               "virtual": false,
               "visibility": "external"
@@ -5059,7 +5059,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "userAddress",
                       "overrides": null,
-                      "scope": 385,
+                      "scope": 380,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -5073,17 +5073,17 @@ export const electionFactoryContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 374,
+                        "id": 369,
                         "name": "ElementaryTypeName",
                         "src": "1386:7:1"
                       }
                     ],
-                    "id": 375,
+                    "id": 370,
                     "name": "VariableDeclaration",
                     "src": "1386:19:1"
                   }
                 ],
-                "id": 376,
+                "id": 371,
                 "name": "ParameterList",
                 "src": "1385:21:1"
               },
@@ -5095,7 +5095,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "",
                       "overrides": null,
-                      "scope": 385,
+                      "scope": 380,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "bool",
@@ -5108,17 +5108,17 @@ export const electionFactoryContractABI = {
                           "name": "bool",
                           "type": "bool"
                         },
-                        "id": 377,
+                        "id": 372,
                         "name": "ElementaryTypeName",
                         "src": "1429:4:1"
                       }
                     ],
-                    "id": 378,
+                    "id": 373,
                     "name": "VariableDeclaration",
                     "src": "1429:4:1"
                   }
                 ],
-                "id": 379,
+                "id": 374,
                 "name": "ParameterList",
                 "src": "1428:6:1"
               },
@@ -5126,7 +5126,7 @@ export const electionFactoryContractABI = {
                 "children": [
                   {
                     "attributes": {
-                      "functionReturnParameters": 379
+                      "functionReturnParameters": 374
                     },
                     "children": [
                       {
@@ -5145,11 +5145,11 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 318,
+                              "referencedDeclaration": 313,
                               "type": "mapping(address => bool)",
                               "value": "listAdmin"
                             },
-                            "id": 380,
+                            "id": 375,
                             "name": "Identifier",
                             "src": "1451:9:1"
                           },
@@ -5159,31 +5159,31 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 375,
+                              "referencedDeclaration": 370,
                               "type": "address",
                               "value": "userAddress"
                             },
-                            "id": 381,
+                            "id": 376,
                             "name": "Identifier",
                             "src": "1461:11:1"
                           }
                         ],
-                        "id": 382,
+                        "id": 377,
                         "name": "IndexAccess",
                         "src": "1451:22:1"
                       }
                     ],
-                    "id": 383,
+                    "id": 378,
                     "name": "Return",
                     "src": "1444:29:1"
                   }
                 ],
-                "id": 384,
+                "id": 379,
                 "name": "Block",
                 "src": "1434:46:1"
               }
             ],
-            "id": 385,
+            "id": 380,
             "name": "FunctionDefinition",
             "src": "1365:115:1"
           },
@@ -5196,7 +5196,7 @@ export const electionFactoryContractABI = {
               "kind": "function",
               "name": "createElection",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "external"
@@ -5210,7 +5210,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_title",
                       "overrides": null,
-                      "scope": 474,
+                      "scope": 469,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -5223,12 +5223,12 @@ export const electionFactoryContractABI = {
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 386,
+                        "id": 381,
                         "name": "ElementaryTypeName",
                         "src": "1510:6:1"
                       }
                     ],
-                    "id": 387,
+                    "id": 382,
                     "name": "VariableDeclaration",
                     "src": "1510:20:1"
                   },
@@ -5238,7 +5238,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_candidatesNames",
                       "overrides": null,
-                      "scope": 474,
+                      "scope": 469,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string[]",
@@ -5257,22 +5257,22 @@ export const electionFactoryContractABI = {
                               "name": "string",
                               "type": "string"
                             },
-                            "id": 388,
+                            "id": 383,
                             "name": "ElementaryTypeName",
                             "src": "1532:6:1"
                           }
                         ],
-                        "id": 389,
+                        "id": 384,
                         "name": "ArrayTypeName",
                         "src": "1532:8:1"
                       }
                     ],
-                    "id": 390,
+                    "id": 385,
                     "name": "VariableDeclaration",
                     "src": "1532:32:1"
                   }
                 ],
-                "id": 391,
+                "id": 386,
                 "name": "ParameterList",
                 "src": "1509:56:1"
               },
@@ -5284,7 +5284,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "",
                       "overrides": null,
-                      "scope": 474,
+                      "scope": 469,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -5297,17 +5297,17 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 396,
+                        "id": 391,
                         "name": "ElementaryTypeName",
                         "src": "1604:4:1"
                       }
                     ],
-                    "id": 397,
+                    "id": 392,
                     "name": "VariableDeclaration",
                     "src": "1604:4:1"
                   }
                 ],
-                "id": 398,
+                "id": 393,
                 "name": "ParameterList",
                 "src": "1603:6:1"
               },
@@ -5319,11 +5319,11 @@ export const electionFactoryContractABI = {
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 333,
+                      "referencedDeclaration": 328,
                       "type": "modifier (address)",
                       "value": "isAdmin"
                     },
-                    "id": 392,
+                    "id": 387,
                     "name": "Identifier",
                     "src": "1575:7:1"
                   },
@@ -5349,17 +5349,17 @@ export const electionFactoryContractABI = {
                           "type": "msg",
                           "value": "msg"
                         },
-                        "id": 393,
+                        "id": 388,
                         "name": "Identifier",
                         "src": "1583:3:1"
                       }
                     ],
-                    "id": 394,
+                    "id": 389,
                     "name": "MemberAccess",
                     "src": "1583:10:1"
                   }
                 ],
-                "id": 395,
+                "id": 390,
                 "name": "ModifierInvocation",
                 "src": "1575:19:1"
               },
@@ -5368,7 +5368,7 @@ export const electionFactoryContractABI = {
                   {
                     "attributes": {
                       "assignments": [
-                        400
+                        395
                       ]
                     },
                     "children": [
@@ -5378,7 +5378,7 @@ export const electionFactoryContractABI = {
                           "mutability": "mutable",
                           "name": "nbCandidates",
                           "overrides": null,
-                          "scope": 473,
+                          "scope": 468,
                           "stateVariable": false,
                           "storageLocation": "default",
                           "type": "uint256",
@@ -5391,12 +5391,12 @@ export const electionFactoryContractABI = {
                               "name": "uint",
                               "type": "uint256"
                             },
-                            "id": 399,
+                            "id": 394,
                             "name": "ElementaryTypeName",
                             "src": "1620:4:1"
                           }
                         ],
-                        "id": 400,
+                        "id": 395,
                         "name": "VariableDeclaration",
                         "src": "1620:17:1"
                       },
@@ -5418,21 +5418,21 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 390,
+                              "referencedDeclaration": 385,
                               "type": "string memory[] memory",
                               "value": "_candidatesNames"
                             },
-                            "id": 401,
+                            "id": 396,
                             "name": "Identifier",
                             "src": "1640:16:1"
                           }
                         ],
-                        "id": 402,
+                        "id": 397,
                         "name": "MemberAccess",
                         "src": "1640:23:1"
                       }
                     ],
-                    "id": 403,
+                    "id": 398,
                     "name": "VariableDeclarationStatement",
                     "src": "1620:43:1"
                   },
@@ -5456,28 +5456,28 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 302,
+                              "referencedDeclaration": 297,
                               "type": "uint256",
                               "value": "electionsCount"
                             },
-                            "id": 404,
+                            "id": 399,
                             "name": "Identifier",
                             "src": "1673:14:1"
                           }
                         ],
-                        "id": 405,
+                        "id": 400,
                         "name": "UnaryOperation",
                         "src": "1673:16:1"
                       }
                     ],
-                    "id": 406,
+                    "id": 401,
                     "name": "ExpressionStatement",
                     "src": "1673:16:1"
                   },
                   {
                     "attributes": {
                       "assignments": [
-                        408
+                        403
                       ]
                     },
                     "children": [
@@ -5487,7 +5487,7 @@ export const electionFactoryContractABI = {
                           "mutability": "mutable",
                           "name": "election",
                           "overrides": null,
-                          "scope": 473,
+                          "scope": 468,
                           "stateVariable": false,
                           "storageLocation": "storage",
                           "type": "struct ElectionFactory.Election",
@@ -5499,15 +5499,15 @@ export const electionFactoryContractABI = {
                             "attributes": {
                               "contractScope": null,
                               "name": "Election",
-                              "referencedDeclaration": 289,
+                              "referencedDeclaration": 284,
                               "type": "struct ElectionFactory.Election"
                             },
-                            "id": 407,
+                            "id": 402,
                             "name": "UserDefinedTypeName",
                             "src": "1699:8:1"
                           }
                         ],
-                        "id": 408,
+                        "id": 403,
                         "name": "VariableDeclaration",
                         "src": "1699:25:1"
                       },
@@ -5527,11 +5527,11 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 306,
+                              "referencedDeclaration": 301,
                               "type": "mapping(uint256 => struct ElectionFactory.Election storage ref)",
                               "value": "elections"
                             },
-                            "id": 409,
+                            "id": 404,
                             "name": "Identifier",
                             "src": "1727:9:1"
                           },
@@ -5541,21 +5541,21 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 302,
+                              "referencedDeclaration": 297,
                               "type": "uint256",
                               "value": "electionsCount"
                             },
-                            "id": 410,
+                            "id": 405,
                             "name": "Identifier",
                             "src": "1737:14:1"
                           }
                         ],
-                        "id": 411,
+                        "id": 406,
                         "name": "IndexAccess",
                         "src": "1727:25:1"
                       }
                     ],
-                    "id": 412,
+                    "id": 407,
                     "name": "VariableDeclarationStatement",
                     "src": "1699:53:1"
                   },
@@ -5580,7 +5580,7 @@ export const electionFactoryContractABI = {
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "title",
-                              "referencedDeclaration": 265,
+                              "referencedDeclaration": 260,
                               "type": "string storage ref"
                             },
                             "children": [
@@ -5590,16 +5590,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 408,
+                                  "referencedDeclaration": 403,
                                   "type": "struct ElectionFactory.Election storage pointer",
                                   "value": "election"
                                 },
-                                "id": 413,
+                                "id": 408,
                                 "name": "Identifier",
                                 "src": "1762:8:1"
                               }
                             ],
-                            "id": 415,
+                            "id": 410,
                             "name": "MemberAccess",
                             "src": "1762:14:1"
                           },
@@ -5609,21 +5609,21 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 387,
+                              "referencedDeclaration": 382,
                               "type": "string memory",
                               "value": "_title"
                             },
-                            "id": 416,
+                            "id": 411,
                             "name": "Identifier",
                             "src": "1779:6:1"
                           }
                         ],
-                        "id": 417,
+                        "id": 412,
                         "name": "Assignment",
                         "src": "1762:23:1"
                       }
                     ],
-                    "id": 418,
+                    "id": 413,
                     "name": "ExpressionStatement",
                     "src": "1762:23:1"
                   },
@@ -5648,7 +5648,7 @@ export const electionFactoryContractABI = {
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "creationDate",
-                              "referencedDeclaration": 267,
+                              "referencedDeclaration": 262,
                               "type": "uint256"
                             },
                             "children": [
@@ -5658,16 +5658,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 408,
+                                  "referencedDeclaration": 403,
                                   "type": "struct ElectionFactory.Election storage pointer",
                                   "value": "election"
                                 },
-                                "id": 419,
+                                "id": 414,
                                 "name": "Identifier",
                                 "src": "1795:8:1"
                               }
                             ],
-                            "id": 421,
+                            "id": 416,
                             "name": "MemberAccess",
                             "src": "1795:21:1"
                           },
@@ -5693,22 +5693,22 @@ export const electionFactoryContractABI = {
                                   "type": "block",
                                   "value": "block"
                                 },
-                                "id": 422,
+                                "id": 417,
                                 "name": "Identifier",
                                 "src": "1819:5:1"
                               }
                             ],
-                            "id": 423,
+                            "id": 418,
                             "name": "MemberAccess",
                             "src": "1819:15:1"
                           }
                         ],
-                        "id": 424,
+                        "id": 419,
                         "name": "Assignment",
                         "src": "1795:39:1"
                       }
                     ],
-                    "id": 425,
+                    "id": 420,
                     "name": "ExpressionStatement",
                     "src": "1795:39:1"
                   },
@@ -5733,7 +5733,7 @@ export const electionFactoryContractABI = {
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "totalVoters",
-                              "referencedDeclaration": 271,
+                              "referencedDeclaration": 266,
                               "type": "uint256"
                             },
                             "children": [
@@ -5743,16 +5743,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 408,
+                                  "referencedDeclaration": 403,
                                   "type": "struct ElectionFactory.Election storage pointer",
                                   "value": "election"
                                 },
-                                "id": 426,
+                                "id": 421,
                                 "name": "Identifier",
                                 "src": "1844:8:1"
                               }
                             ],
-                            "id": 428,
+                            "id": 423,
                             "name": "MemberAccess",
                             "src": "1844:20:1"
                           },
@@ -5769,17 +5769,17 @@ export const electionFactoryContractABI = {
                               "type": "int_const 0",
                               "value": "0"
                             },
-                            "id": 429,
+                            "id": 424,
                             "name": "Literal",
                             "src": "1867:1:1"
                           }
                         ],
-                        "id": 430,
+                        "id": 425,
                         "name": "Assignment",
                         "src": "1844:24:1"
                       }
                     ],
-                    "id": 431,
+                    "id": 426,
                     "name": "ExpressionStatement",
                     "src": "1844:24:1"
                   },
@@ -5804,7 +5804,7 @@ export const electionFactoryContractABI = {
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "isOpen",
-                              "referencedDeclaration": 273,
+                              "referencedDeclaration": 268,
                               "type": "bool"
                             },
                             "children": [
@@ -5814,16 +5814,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 408,
+                                  "referencedDeclaration": 403,
                                   "type": "struct ElectionFactory.Election storage pointer",
                                   "value": "election"
                                 },
-                                "id": 432,
+                                "id": 427,
                                 "name": "Identifier",
                                 "src": "1878:8:1"
                               }
                             ],
-                            "id": 434,
+                            "id": 429,
                             "name": "MemberAccess",
                             "src": "1878:15:1"
                           },
@@ -5840,17 +5840,17 @@ export const electionFactoryContractABI = {
                               "type": "bool",
                               "value": "true"
                             },
-                            "id": 435,
+                            "id": 430,
                             "name": "Literal",
                             "src": "1896:4:1"
                           }
                         ],
-                        "id": 436,
+                        "id": 431,
                         "name": "Assignment",
                         "src": "1878:22:1"
                       }
                     ],
-                    "id": 437,
+                    "id": 432,
                     "name": "ExpressionStatement",
                     "src": "1878:22:1"
                   },
@@ -5859,7 +5859,7 @@ export const electionFactoryContractABI = {
                       {
                         "attributes": {
                           "assignments": [
-                            439
+                            434
                           ]
                         },
                         "children": [
@@ -5869,7 +5869,7 @@ export const electionFactoryContractABI = {
                               "mutability": "mutable",
                               "name": "i",
                               "overrides": null,
-                              "scope": 456,
+                              "scope": 451,
                               "stateVariable": false,
                               "storageLocation": "default",
                               "type": "uint256",
@@ -5882,12 +5882,12 @@ export const electionFactoryContractABI = {
                                   "name": "uint",
                                   "type": "uint256"
                                 },
-                                "id": 438,
+                                "id": 433,
                                 "name": "ElementaryTypeName",
                                 "src": "1916:4:1"
                               }
                             ],
-                            "id": 439,
+                            "id": 434,
                             "name": "VariableDeclaration",
                             "src": "1916:6:1"
                           },
@@ -5904,12 +5904,12 @@ export const electionFactoryContractABI = {
                               "type": "int_const 0",
                               "value": "0"
                             },
-                            "id": 440,
+                            "id": 435,
                             "name": "Literal",
                             "src": "1925:1:1"
                           }
                         ],
-                        "id": 441,
+                        "id": 436,
                         "name": "VariableDeclarationStatement",
                         "src": "1916:10:1"
                       },
@@ -5934,11 +5934,11 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 439,
+                              "referencedDeclaration": 434,
                               "type": "uint256",
                               "value": "i"
                             },
-                            "id": 442,
+                            "id": 437,
                             "name": "Identifier",
                             "src": "1928:1:1"
                           },
@@ -5948,16 +5948,16 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 400,
+                              "referencedDeclaration": 395,
                               "type": "uint256",
                               "value": "nbCandidates"
                             },
-                            "id": 443,
+                            "id": 438,
                             "name": "Identifier",
                             "src": "1932:12:1"
                           }
                         ],
-                        "id": 444,
+                        "id": 439,
                         "name": "BinaryOperation",
                         "src": "1928:16:1"
                       },
@@ -5981,21 +5981,21 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 439,
+                                  "referencedDeclaration": 434,
                                   "type": "uint256",
                                   "value": "i"
                                 },
-                                "id": 445,
+                                "id": 440,
                                 "name": "Identifier",
                                 "src": "1946:1:1"
                               }
                             ],
-                            "id": 446,
+                            "id": 441,
                             "name": "UnaryOperation",
                             "src": "1946:3:1"
                           }
                         ],
-                        "id": 447,
+                        "id": 442,
                         "name": "ExpressionStatement",
                         "src": "1946:3:1"
                       },
@@ -6034,11 +6034,11 @@ export const electionFactoryContractABI = {
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 496,
+                                      "referencedDeclaration": 491,
                                       "type": "function (uint256,string memory)",
                                       "value": "addCandidate"
                                     },
-                                    "id": 448,
+                                    "id": 443,
                                     "name": "Identifier",
                                     "src": "1965:12:1"
                                   },
@@ -6048,11 +6048,11 @@ export const electionFactoryContractABI = {
                                       "overloadedDeclarations": [
                                         null
                                       ],
-                                      "referencedDeclaration": 302,
+                                      "referencedDeclaration": 297,
                                       "type": "uint256",
                                       "value": "electionsCount"
                                     },
-                                    "id": 449,
+                                    "id": 444,
                                     "name": "Identifier",
                                     "src": "1978:14:1"
                                   },
@@ -6072,11 +6072,11 @@ export const electionFactoryContractABI = {
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 390,
+                                          "referencedDeclaration": 385,
                                           "type": "string memory[] memory",
                                           "value": "_candidatesNames"
                                         },
-                                        "id": 450,
+                                        "id": 445,
                                         "name": "Identifier",
                                         "src": "1994:16:1"
                                       },
@@ -6086,36 +6086,36 @@ export const electionFactoryContractABI = {
                                           "overloadedDeclarations": [
                                             null
                                           ],
-                                          "referencedDeclaration": 439,
+                                          "referencedDeclaration": 434,
                                           "type": "uint256",
                                           "value": "i"
                                         },
-                                        "id": 451,
+                                        "id": 446,
                                         "name": "Identifier",
                                         "src": "2011:1:1"
                                       }
                                     ],
-                                    "id": 452,
+                                    "id": 447,
                                     "name": "IndexAccess",
                                     "src": "1994:19:1"
                                   }
                                 ],
-                                "id": 453,
+                                "id": 448,
                                 "name": "FunctionCall",
                                 "src": "1965:49:1"
                               }
                             ],
-                            "id": 454,
+                            "id": 449,
                             "name": "ExpressionStatement",
                             "src": "1965:49:1"
                           }
                         ],
-                        "id": 455,
+                        "id": 450,
                         "name": "Block",
                         "src": "1951:74:1"
                       }
                     ],
-                    "id": 456,
+                    "id": 451,
                     "name": "ForStatement",
                     "src": "1911:114:1"
                   },
@@ -6148,11 +6148,11 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 310,
+                                  "referencedDeclaration": 305,
                                   "type": "mapping(uint256 => address)",
                                   "value": "electionToOwner"
                                 },
-                                "id": 457,
+                                "id": 452,
                                 "name": "Identifier",
                                 "src": "2035:15:1"
                               },
@@ -6162,16 +6162,16 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 302,
+                                  "referencedDeclaration": 297,
                                   "type": "uint256",
                                   "value": "electionsCount"
                                 },
-                                "id": 458,
+                                "id": 453,
                                 "name": "Identifier",
                                 "src": "2051:14:1"
                               }
                             ],
-                            "id": 459,
+                            "id": 454,
                             "name": "IndexAccess",
                             "src": "2035:31:1"
                           },
@@ -6197,22 +6197,22 @@ export const electionFactoryContractABI = {
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 460,
+                                "id": 455,
                                 "name": "Identifier",
                                 "src": "2069:3:1"
                               }
                             ],
-                            "id": 461,
+                            "id": 456,
                             "name": "MemberAccess",
                             "src": "2069:10:1"
                           }
                         ],
-                        "id": 462,
+                        "id": 457,
                         "name": "Assignment",
                         "src": "2035:44:1"
                       }
                     ],
-                    "id": 463,
+                    "id": 458,
                     "name": "ExpressionStatement",
                     "src": "2035:44:1"
                   },
@@ -6245,11 +6245,11 @@ export const electionFactoryContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 314,
+                                  "referencedDeclaration": 309,
                                   "type": "mapping(address => uint256)",
                                   "value": "ownerElectionCount"
                                 },
-                                "id": 464,
+                                "id": 459,
                                 "name": "Identifier",
                                 "src": "2090:18:1"
                               },
@@ -6275,17 +6275,17 @@ export const electionFactoryContractABI = {
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 465,
+                                    "id": 460,
                                     "name": "Identifier",
                                     "src": "2109:3:1"
                                   }
                                 ],
-                                "id": 466,
+                                "id": 461,
                                 "name": "MemberAccess",
                                 "src": "2109:10:1"
                               }
                             ],
-                            "id": 467,
+                            "id": 462,
                             "name": "IndexAccess",
                             "src": "2090:30:1"
                           },
@@ -6302,23 +6302,23 @@ export const electionFactoryContractABI = {
                               "type": "int_const 1",
                               "value": "1"
                             },
-                            "id": 468,
+                            "id": 463,
                             "name": "Literal",
                             "src": "2124:1:1"
                           }
                         ],
-                        "id": 469,
+                        "id": 464,
                         "name": "Assignment",
                         "src": "2090:35:1"
                       }
                     ],
-                    "id": 470,
+                    "id": 465,
                     "name": "ExpressionStatement",
                     "src": "2090:35:1"
                   },
                   {
                     "attributes": {
-                      "functionReturnParameters": 398
+                      "functionReturnParameters": 393
                     },
                     "children": [
                       {
@@ -6327,26 +6327,26 @@ export const electionFactoryContractABI = {
                           "overloadedDeclarations": [
                             null
                           ],
-                          "referencedDeclaration": 302,
+                          "referencedDeclaration": 297,
                           "type": "uint256",
                           "value": "electionsCount"
                         },
-                        "id": 471,
+                        "id": 466,
                         "name": "Identifier",
                         "src": "2143:14:1"
                       }
                     ],
-                    "id": 472,
+                    "id": 467,
                     "name": "Return",
                     "src": "2136:21:1"
                   }
                 ],
-                "id": 473,
+                "id": 468,
                 "name": "Block",
                 "src": "1610:554:1"
               }
             ],
-            "id": 474,
+            "id": 469,
             "name": "FunctionDefinition",
             "src": "1486:678:1"
           },
@@ -6362,7 +6362,7 @@ export const electionFactoryContractABI = {
               ],
               "name": "addCandidate",
               "overrides": null,
-              "scope": 497,
+              "scope": 492,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -6376,7 +6376,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_electionId",
                       "overrides": null,
-                      "scope": 496,
+                      "scope": 491,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "uint256",
@@ -6389,12 +6389,12 @@ export const electionFactoryContractABI = {
                           "name": "uint",
                           "type": "uint256"
                         },
-                        "id": 475,
+                        "id": 470,
                         "name": "ElementaryTypeName",
                         "src": "2192:4:1"
                       }
                     ],
-                    "id": 476,
+                    "id": 471,
                     "name": "VariableDeclaration",
                     "src": "2192:16:1"
                   },
@@ -6404,7 +6404,7 @@ export const electionFactoryContractABI = {
                       "mutability": "mutable",
                       "name": "_candidateName",
                       "overrides": null,
-                      "scope": 496,
+                      "scope": 491,
                       "stateVariable": false,
                       "storageLocation": "memory",
                       "type": "string",
@@ -6417,17 +6417,17 @@ export const electionFactoryContractABI = {
                           "name": "string",
                           "type": "string"
                         },
-                        "id": 477,
+                        "id": 472,
                         "name": "ElementaryTypeName",
                         "src": "2210:6:1"
                       }
                     ],
-                    "id": 478,
+                    "id": 473,
                     "name": "VariableDeclaration",
                     "src": "2210:28:1"
                   }
                 ],
-                "id": 479,
+                "id": 474,
                 "name": "ParameterList",
                 "src": "2191:48:1"
               },
@@ -6438,7 +6438,7 @@ export const electionFactoryContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 480,
+                "id": 475,
                 "name": "ParameterList",
                 "src": "2247:0:1"
               },
@@ -6465,7 +6465,7 @@ export const electionFactoryContractABI = {
                               "isPure": false,
                               "lValueRequested": true,
                               "member_name": "name",
-                              "referencedDeclaration": 291,
+                              "referencedDeclaration": 286,
                               "type": "string storage ref"
                             },
                             "children": [
@@ -6487,7 +6487,7 @@ export const electionFactoryContractABI = {
                                       "isPure": false,
                                       "lValueRequested": false,
                                       "member_name": "candidates",
-                                      "referencedDeclaration": 279,
+                                      "referencedDeclaration": 274,
                                       "type": "mapping(uint256 => struct ElectionFactory.Candidate storage ref)"
                                     },
                                     "children": [
@@ -6507,11 +6507,11 @@ export const electionFactoryContractABI = {
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 306,
+                                              "referencedDeclaration": 301,
                                               "type": "mapping(uint256 => struct ElectionFactory.Election storage ref)",
                                               "value": "elections"
                                             },
-                                            "id": 481,
+                                            "id": 476,
                                             "name": "Identifier",
                                             "src": "2257:9:1"
                                           },
@@ -6521,21 +6521,21 @@ export const electionFactoryContractABI = {
                                               "overloadedDeclarations": [
                                                 null
                                               ],
-                                              "referencedDeclaration": 476,
+                                              "referencedDeclaration": 471,
                                               "type": "uint256",
                                               "value": "_electionId"
                                             },
-                                            "id": 482,
+                                            "id": 477,
                                             "name": "Identifier",
                                             "src": "2267:11:1"
                                           }
                                         ],
-                                        "id": 483,
+                                        "id": 478,
                                         "name": "IndexAccess",
                                         "src": "2257:22:1"
                                       }
                                     ],
-                                    "id": 484,
+                                    "id": 479,
                                     "name": "MemberAccess",
                                     "src": "2257:33:1"
                                   },
@@ -6559,7 +6559,7 @@ export const electionFactoryContractABI = {
                                           "isPure": false,
                                           "lValueRequested": true,
                                           "member_name": "candidatesCount",
-                                          "referencedDeclaration": 275,
+                                          "referencedDeclaration": 270,
                                           "type": "uint256"
                                         },
                                         "children": [
@@ -6579,11 +6579,11 @@ export const electionFactoryContractABI = {
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 306,
+                                                  "referencedDeclaration": 301,
                                                   "type": "mapping(uint256 => struct ElectionFactory.Election storage ref)",
                                                   "value": "elections"
                                                 },
-                                                "id": 485,
+                                                "id": 480,
                                                 "name": "Identifier",
                                                 "src": "2291:9:1"
                                               },
@@ -6593,36 +6593,36 @@ export const electionFactoryContractABI = {
                                                   "overloadedDeclarations": [
                                                     null
                                                   ],
-                                                  "referencedDeclaration": 476,
+                                                  "referencedDeclaration": 471,
                                                   "type": "uint256",
                                                   "value": "_electionId"
                                                 },
-                                                "id": 486,
+                                                "id": 481,
                                                 "name": "Identifier",
                                                 "src": "2301:11:1"
                                               }
                                             ],
-                                            "id": 487,
+                                            "id": 482,
                                             "name": "IndexAccess",
                                             "src": "2291:22:1"
                                           }
                                         ],
-                                        "id": 488,
+                                        "id": 483,
                                         "name": "MemberAccess",
                                         "src": "2291:38:1"
                                       }
                                     ],
-                                    "id": 489,
+                                    "id": 484,
                                     "name": "UnaryOperation",
                                     "src": "2291:40:1"
                                   }
                                 ],
-                                "id": 490,
+                                "id": 485,
                                 "name": "IndexAccess",
                                 "src": "2257:75:1"
                               }
                             ],
-                            "id": 491,
+                            "id": 486,
                             "name": "MemberAccess",
                             "src": "2257:80:1"
                           },
@@ -6632,41 +6632,41 @@ export const electionFactoryContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 478,
+                              "referencedDeclaration": 473,
                               "type": "string memory",
                               "value": "_candidateName"
                             },
-                            "id": 492,
+                            "id": 487,
                             "name": "Identifier",
                             "src": "2340:14:1"
                           }
                         ],
-                        "id": 493,
+                        "id": 488,
                         "name": "Assignment",
                         "src": "2257:97:1"
                       }
                     ],
-                    "id": 494,
+                    "id": 489,
                     "name": "ExpressionStatement",
                     "src": "2257:97:1"
                   }
                 ],
-                "id": 495,
+                "id": 490,
                 "name": "Block",
                 "src": "2247:114:1"
               }
             ],
-            "id": 496,
+            "id": 491,
             "name": "FunctionDefinition",
             "src": "2170:191:1"
           }
         ],
-        "id": 497,
+        "id": 492,
         "name": "ContractDefinition",
         "src": "126:2237:1"
       }
     ],
-    "id": 498,
+    "id": 493,
     "name": "SourceUnit",
     "src": "32:2332:1"
   },
@@ -6676,7 +6676,7 @@ export const electionFactoryContractABI = {
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-21T16:57:14.442Z",
+  "updatedAt": "2021-01-22T16:32:52.554Z",
   "devdoc": {
     "kind": "dev",
     "methods": {

@@ -22,14 +22,19 @@ export class CandidateService {
     return candidateCount;
   }
 
-  async getCandidateName(electionId: number, candidateId: number): Promise<string> {
+  async getCandidate(electionId: number, candidateId: number): Promise<any> {
     this.accounts = await this.web3js.eth.getAccounts(); 
-    const candidateName = await this.candidateContract.methods.getCandidateName(electionId, candidateId).call({ from: this.accounts[0] });
-    return candidateName;
+    const candidate = await this.candidateContract.methods.getCandidate(electionId, candidateId).call({ from: this.accounts[0] });
+    return {
+      name: candidate[0],
+      avgNote: candidate[2],
+      percent: candidate[1]
+    };
   }
 
-   /*
-    function getCandidateAverageNote(uint _electionId, uint _candidateId) external view returns (uint) {
-    function calculatePercentageOfNote(uint _electionId, uint _candidateId, uint _note) external view returns(uint){
-   */
+  async calculatePercentageOfNote(electionId: number, candidateId: number, note: number): Promise<number> {
+    this.accounts = await this.web3js.eth.getAccounts(); 
+    const percent = await this.candidateContract.methods.calculatePercentageOfNote(electionId, candidateId, note).call({ from: this.accounts[0] });
+    return percent;
+  }
 }

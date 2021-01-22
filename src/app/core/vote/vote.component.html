@@ -9,9 +9,9 @@
 
         <form>
 
-            <div *ngFor="let name of candidates ;let i = index" class="form-group">
+            <div *ngFor="let candidate of candidates ;let i = index" class="form-group">
 
-                <label for="candidate-note">Candidat {{i+1}} : <b>{{name}}</b> </label>
+                <label for="candidate-note">Candidat {{i+1}} : <b>{{candidate.name}}</b> </label>
                 
                 <select class="form-control" id="candidate-note"
                 (change)="changeCandidateNote($event, i)">

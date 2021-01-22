@@ -12,7 +12,7 @@ import { VoteService } from 'src/app/services/vote.service';
 export class VoteComponent implements OnInit {
 
   public title : string = "Voter";
-  public candidates: string[] = [];
+  public candidates: any[] = [];
   public notes = [];
   public invalidForm: boolean = false;
   private electionId: number;
@@ -44,7 +44,7 @@ export class VoteComponent implements OnInit {
 
     for (let count = 0; count < candidateCount; count++) {
       this.candidates.push(
-        await this.candidateService.getCandidateName(this.electionId, count)
+        await this.candidateService.getCandidate(this.electionId, count)
       );
     }
 
