@@ -41,20 +41,26 @@ export class ManageAdminComponent implements OnInit {
 
   async submitDelete(){
 
-    console.log(await this.ownableService.isOwner(this.address));
-    /*if(this.formIsValid()){
-      this.isLoadingDelete = true;
-      let responseStatus = await this.electionFactoryService.deleteAdmin(this.address);
-      this.isLoadingDelete = false;
-      if(responseStatus){
-        alert("Cet utilisateur n'est plus administrateur !");
-        location.replace('/');
+    let isOwner = await this.ownableService.isOwner(this.address);
+
+    if(isOwner){
+      alert("Vous ne pouvez pas supprimer le propriétaire de l'application");
+    }
+    else{
+      if(this.formIsValid()){
+        this.isLoadingDelete = true;
+        let responseStatus = await this.electionFactoryService.deleteAdmin(this.address);
+        this.isLoadingDelete = false;
+        if(responseStatus){
+          alert("Cet utilisateur n'est plus administrateur !");
+          location.replace('/');
+        }
+        else{
+          alert("L'action a échouée, recommencez plus tard");
+          location.replace('/');
+        }
       }
-      else{
-        alert("L'action a échouée, recommencez plus tard");
-        location.replace('/');
-      }
-    }*/
+    }
   }
 
   async submitAdd(){
