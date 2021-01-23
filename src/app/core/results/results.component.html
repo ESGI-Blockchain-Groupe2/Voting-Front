@@ -6,6 +6,7 @@
         <div class="marge"></div>
     
         <div class="titre_page">{{title}}</div>
+        <div class="nb_votes">Nombre de votant: {{nbVotes}}</div>
 
         <div>
 
@@ -22,10 +23,13 @@
                 <th scope="row">{{candidate.name}}</th>
                 <td>{{possibleNotes[candidate.avgNote]}}</td>
                 <td *ngIf="candidate.isWinner" class="table-success">Victoire</td>
-                <td *ngIf="!candidate.isWinner">Défaite</td>
+                <td *ngIf="!candidate.isWinner && !candidate.equality">Défaite</td>
+                <td *ngIf="candidate.equality" class="table-warning">Egalité</td>
               </tr>
             </tbody>
           </table>
+
+          <div class="marge"></div>
     
           <canvas #resultsCanvas id="resultsChart" width="400" height="200"></canvas>
     

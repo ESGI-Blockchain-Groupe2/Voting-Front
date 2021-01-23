@@ -24,6 +24,7 @@ export class ElectionFactoryService {
 
   async getElection(id: number) { //Commence à 1
     this.accounts = await this.web3js.eth.getAccounts(); 
+    
     const election = await this.electionFactoryContract.methods.elections(id).call({ from: this.accounts[0] });
 
     let formatedCreationDate = new Date(election.creationDate * 1000);

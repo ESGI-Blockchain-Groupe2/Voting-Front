@@ -21,4 +21,10 @@ export class VoteService {
     const response = await this.voteContract.methods.voteToElection(electionId, notes).send({ from: this.accounts[0] });
     return response.status;
   }
+
+  async userAlreadyVote(electionId: number): Promise<boolean> {
+    this.accounts = await this.web3js.eth.getAccounts(); 
+    const response = await this.voteContract.methods.hasAlreadyVoted(electionId).call({ from: this.accounts[0] });
+    return response;
+  }
 }

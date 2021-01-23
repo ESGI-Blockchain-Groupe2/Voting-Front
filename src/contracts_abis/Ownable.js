@@ -1,4 +1,4 @@
-export const ownerContractABI = {
+export const ownableContractABI = {
   "contractName": "Ownable",
   "abi": [
     {
@@ -64,15 +64,15 @@ export const ownerContractABI = {
     "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ownable.sol",
     "exportedSymbols": {
       "Ownable": [
-        1039
+        1047
       ]
     },
-    "id": 1040,
+    "id": 1048,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 980,
+        "id": 988,
         "literals": [
           "solidity",
           ">=",
@@ -91,15 +91,15 @@ export const ownerContractABI = {
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 981,
+          "id": 989,
           "nodeType": "StructuredDocumentation",
           "src": "66:189:5",
           "text": " @title Ownable\n @dev The Ownable contract has an owner address, and provides basic authorization control\n functions, this simplifies the implementation of \"user permissions\"."
         },
         "fullyImplemented": true,
-        "id": 1039,
+        "id": 1047,
         "linearizedBaseContracts": [
-          1039
+          1047
         ],
         "name": "Ownable",
         "nodeType": "ContractDefinition",
@@ -107,12 +107,12 @@ export const ownerContractABI = {
           {
             "constant": false,
             "functionSelector": "8da5cb5b",
-            "id": 983,
+            "id": 991,
             "mutability": "mutable",
             "name": "owner",
             "nodeType": "VariableDeclaration",
             "overrides": null,
-            "scope": 1039,
+            "scope": 1047,
             "src": "279:20:5",
             "stateVariable": true,
             "storageLocation": "default",
@@ -121,7 +121,7 @@ export const ownerContractABI = {
               "typeString": "address"
             },
             "typeName": {
-              "id": 982,
+              "id": 990,
               "name": "address",
               "nodeType": "ElementaryTypeName",
               "src": "279:7:5",
@@ -137,22 +137,22 @@ export const ownerContractABI = {
           {
             "anonymous": false,
             "documentation": null,
-            "id": 989,
+            "id": 997,
             "name": "OwnershipTransferred",
             "nodeType": "EventDefinition",
             "parameters": {
-              "id": 988,
+              "id": 996,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 985,
+                  "id": 993,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "previousOwner",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 989,
+                  "scope": 997,
                   "src": "333:29:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -161,7 +161,7 @@ export const ownerContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 984,
+                    "id": 992,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "333:7:5",
@@ -176,13 +176,13 @@ export const ownerContractABI = {
                 },
                 {
                   "constant": false,
-                  "id": 987,
+                  "id": 995,
                   "indexed": true,
                   "mutability": "mutable",
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 989,
+                  "scope": 997,
                   "src": "364:24:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -191,7 +191,7 @@ export const ownerContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 986,
+                    "id": 994,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "364:7:5",
@@ -211,25 +211,25 @@ export const ownerContractABI = {
           },
           {
             "body": {
-              "id": 998,
+              "id": 1006,
               "nodeType": "Block",
               "src": "534:35:5",
               "statements": [
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 996,
+                    "id": 1004,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 993,
+                      "id": 1001,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 983,
+                      "referencedDeclaration": 991,
                       "src": "544:5:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -242,7 +242,7 @@ export const ownerContractABI = {
                       "argumentTypes": null,
                       "expression": {
                         "argumentTypes": null,
-                        "id": 994,
+                        "id": 1002,
                         "name": "msg",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
@@ -253,7 +253,7 @@ export const ownerContractABI = {
                           "typeString": "msg"
                         }
                       },
-                      "id": 995,
+                      "id": 1003,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
@@ -273,19 +273,19 @@ export const ownerContractABI = {
                       "typeString": "address"
                     }
                   },
-                  "id": 997,
+                  "id": 1005,
                   "nodeType": "ExpressionStatement",
                   "src": "544:18:5"
                 }
               ]
             },
             "documentation": {
-              "id": 990,
+              "id": 998,
               "nodeType": "StructuredDocumentation",
               "src": "396:119:5",
               "text": " @dev The Ownable constructor sets the original `owner` of the contract to the sender\n account."
             },
-            "id": 999,
+            "id": 1007,
             "implemented": true,
             "kind": "constructor",
             "modifiers": [],
@@ -293,18 +293,18 @@ export const ownerContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 991,
+              "id": 999,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "531:2:5"
             },
             "returnParameters": {
-              "id": 992,
+              "id": 1000,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "534:0:5"
             },
-            "scope": 1039,
+            "scope": 1047,
             "src": "520:49:5",
             "stateMutability": "nonpayable",
             "virtual": false,
@@ -312,7 +312,7 @@ export const ownerContractABI = {
           },
           {
             "body": {
-              "id": 1010,
+              "id": 1018,
               "nodeType": "Block",
               "src": "679:56:5",
               "statements": [
@@ -326,7 +326,7 @@ export const ownerContractABI = {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 1006,
+                        "id": 1014,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -335,7 +335,7 @@ export const ownerContractABI = {
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1003,
+                            "id": 1011,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
@@ -346,7 +346,7 @@ export const ownerContractABI = {
                               "typeString": "msg"
                             }
                           },
-                          "id": 1004,
+                          "id": 1012,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -364,11 +364,11 @@ export const ownerContractABI = {
                         "operator": "==",
                         "rightExpression": {
                           "argumentTypes": null,
-                          "id": 1005,
+                          "id": 1013,
                           "name": "owner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 983,
+                          "referencedDeclaration": 991,
                           "src": "711:5:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -389,7 +389,7 @@ export const ownerContractABI = {
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1002,
+                      "id": 1010,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -403,7 +403,7 @@ export const ownerContractABI = {
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1007,
+                    "id": 1015,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -418,29 +418,29 @@ export const ownerContractABI = {
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1008,
+                  "id": 1016,
                   "nodeType": "ExpressionStatement",
                   "src": "689:28:5"
                 },
                 {
-                  "id": 1009,
+                  "id": 1017,
                   "nodeType": "PlaceholderStatement",
                   "src": "727:1:5"
                 }
               ]
             },
             "documentation": {
-              "id": 1000,
+              "id": 1008,
               "nodeType": "StructuredDocumentation",
               "src": "576:77:5",
               "text": " @dev Throws if called by any account other than the owner."
             },
-            "id": 1011,
+            "id": 1019,
             "name": "onlyOwner",
             "nodeType": "ModifierDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1001,
+              "id": 1009,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "676:2:5"
@@ -451,7 +451,7 @@ export const ownerContractABI = {
           },
           {
             "body": {
-              "id": 1037,
+              "id": 1045,
               "nodeType": "Block",
               "src": "969:126:5",
               "statements": [
@@ -465,18 +465,18 @@ export const ownerContractABI = {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 1025,
+                        "id": 1033,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 1020,
+                          "id": 1028,
                           "name": "newOwner",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 1014,
+                          "referencedDeclaration": 1022,
                           "src": "987:8:5",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
@@ -491,7 +491,7 @@ export const ownerContractABI = {
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 1023,
+                              "id": 1031,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
@@ -514,7 +514,7 @@ export const ownerContractABI = {
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 1022,
+                            "id": 1030,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -526,7 +526,7 @@ export const ownerContractABI = {
                               "typeString": "type(address)"
                             },
                             "typeName": {
-                              "id": 1021,
+                              "id": 1029,
                               "name": "address",
                               "nodeType": "ElementaryTypeName",
                               "src": "999:7:5",
@@ -536,7 +536,7 @@ export const ownerContractABI = {
                               }
                             }
                           },
-                          "id": 1024,
+                          "id": 1032,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -565,7 +565,7 @@ export const ownerContractABI = {
                           "typeString": "bool"
                         }
                       ],
-                      "id": 1019,
+                      "id": 1027,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
@@ -579,7 +579,7 @@ export const ownerContractABI = {
                         "typeString": "function (bool) pure"
                       }
                     },
-                    "id": 1026,
+                    "id": 1034,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -594,7 +594,7 @@ export const ownerContractABI = {
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1027,
+                  "id": 1035,
                   "nodeType": "ExpressionStatement",
                   "src": "979:31:5"
                 },
@@ -604,11 +604,11 @@ export const ownerContractABI = {
                     "arguments": [
                       {
                         "argumentTypes": null,
-                        "id": 1029,
+                        "id": 1037,
                         "name": "owner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 983,
+                        "referencedDeclaration": 991,
                         "src": "1046:5:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -617,11 +617,11 @@ export const ownerContractABI = {
                       },
                       {
                         "argumentTypes": null,
-                        "id": 1030,
+                        "id": 1038,
                         "name": "newOwner",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1014,
+                        "referencedDeclaration": 1022,
                         "src": "1053:8:5",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
@@ -640,18 +640,18 @@ export const ownerContractABI = {
                           "typeString": "address"
                         }
                       ],
-                      "id": 1028,
+                      "id": 1036,
                       "name": "OwnershipTransferred",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 989,
+                      "referencedDeclaration": 997,
                       "src": "1025:20:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_event_nonpayable$_t_address_$_t_address_$returns$__$",
                         "typeString": "function (address,address)"
                       }
                     },
-                    "id": 1031,
+                    "id": 1039,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -666,25 +666,25 @@ export const ownerContractABI = {
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 1032,
+                  "id": 1040,
                   "nodeType": "EmitStatement",
                   "src": "1020:42:5"
                 },
                 {
                   "expression": {
                     "argumentTypes": null,
-                    "id": 1035,
+                    "id": 1043,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
                     "lValueRequested": false,
                     "leftHandSide": {
                       "argumentTypes": null,
-                      "id": 1033,
+                      "id": 1041,
                       "name": "owner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 983,
+                      "referencedDeclaration": 991,
                       "src": "1072:5:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -695,11 +695,11 @@ export const ownerContractABI = {
                     "operator": "=",
                     "rightHandSide": {
                       "argumentTypes": null,
-                      "id": 1034,
+                      "id": 1042,
                       "name": "newOwner",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1014,
+                      "referencedDeclaration": 1022,
                       "src": "1080:8:5",
                       "typeDescriptions": {
                         "typeIdentifier": "t_address",
@@ -712,33 +712,33 @@ export const ownerContractABI = {
                       "typeString": "address"
                     }
                   },
-                  "id": 1036,
+                  "id": 1044,
                   "nodeType": "ExpressionStatement",
                   "src": "1072:16:5"
                 }
               ]
             },
             "documentation": {
-              "id": 1012,
+              "id": 1020,
               "nodeType": "StructuredDocumentation",
               "src": "742:160:5",
               "text": " @dev Allows the current owner to transfer control of the contract to a newOwner.\n @param newOwner The address to transfer ownership to."
             },
             "functionSelector": "f2fde38b",
-            "id": 1038,
+            "id": 1046,
             "implemented": true,
             "kind": "function",
             "modifiers": [
               {
                 "arguments": null,
-                "id": 1017,
+                "id": 1025,
                 "modifierName": {
                   "argumentTypes": null,
-                  "id": 1016,
+                  "id": 1024,
                   "name": "onlyOwner",
                   "nodeType": "Identifier",
                   "overloadedDeclarations": [],
-                  "referencedDeclaration": 1011,
+                  "referencedDeclaration": 1019,
                   "src": "959:9:5",
                   "typeDescriptions": {
                     "typeIdentifier": "t_modifier$__$",
@@ -753,17 +753,17 @@ export const ownerContractABI = {
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1015,
+              "id": 1023,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1014,
+                  "id": 1022,
                   "mutability": "mutable",
                   "name": "newOwner",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1038,
+                  "scope": 1046,
                   "src": "934:16:5",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -772,7 +772,7 @@ export const ownerContractABI = {
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1013,
+                    "id": 1021,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
                     "src": "934:7:5",
@@ -789,19 +789,19 @@ export const ownerContractABI = {
               "src": "933:18:5"
             },
             "returnParameters": {
-              "id": 1018,
+              "id": 1026,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "969:0:5"
             },
-            "scope": 1039,
+            "scope": 1047,
             "src": "907:188:5",
             "stateMutability": "nonpayable",
             "virtual": false,
             "visibility": "public"
           }
         ],
-        "scope": 1040,
+        "scope": 1048,
         "src": "256:842:5"
       }
     ],
@@ -812,7 +812,7 @@ export const ownerContractABI = {
       "absolutePath": "/C/Users/acham/Applications/ESGI/Blockchain/Projet/Voting-SmartContract-Truffled/contracts/ownable.sol",
       "exportedSymbols": {
         "Ownable": [
-          1039
+          1047
         ]
       },
       "license": "MIT"
@@ -830,7 +830,7 @@ export const ownerContractABI = {
             ".0"
           ]
         },
-        "id": 980,
+        "id": 988,
         "name": "PragmaDirective",
         "src": "32:33:5"
       },
@@ -846,17 +846,17 @@ export const ownerContractABI = {
           "contractKind": "contract",
           "fullyImplemented": true,
           "linearizedBaseContracts": [
-            1039
+            1047
           ],
           "name": "Ownable",
-          "scope": 1040
+          "scope": 1048
         },
         "children": [
           {
             "attributes": {
               "text": " @title Ownable\n @dev The Ownable contract has an owner address, and provides basic authorization control\n functions, this simplifies the implementation of \"user permissions\"."
             },
-            "id": 981,
+            "id": 989,
             "name": "StructuredDocumentation",
             "src": "66:189:5"
           },
@@ -867,7 +867,7 @@ export const ownerContractABI = {
               "mutability": "mutable",
               "name": "owner",
               "overrides": null,
-              "scope": 1039,
+              "scope": 1047,
               "stateVariable": true,
               "storageLocation": "default",
               "type": "address",
@@ -881,12 +881,12 @@ export const ownerContractABI = {
                   "stateMutability": "nonpayable",
                   "type": "address"
                 },
-                "id": 982,
+                "id": 990,
                 "name": "ElementaryTypeName",
                 "src": "279:7:5"
               }
             ],
-            "id": 983,
+            "id": 991,
             "name": "VariableDeclaration",
             "src": "279:20:5"
           },
@@ -906,7 +906,7 @@ export const ownerContractABI = {
                       "mutability": "mutable",
                       "name": "previousOwner",
                       "overrides": null,
-                      "scope": 989,
+                      "scope": 997,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -920,12 +920,12 @@ export const ownerContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 984,
+                        "id": 992,
                         "name": "ElementaryTypeName",
                         "src": "333:7:5"
                       }
                     ],
-                    "id": 985,
+                    "id": 993,
                     "name": "VariableDeclaration",
                     "src": "333:29:5"
                   },
@@ -936,7 +936,7 @@ export const ownerContractABI = {
                       "mutability": "mutable",
                       "name": "newOwner",
                       "overrides": null,
-                      "scope": 989,
+                      "scope": 997,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -950,22 +950,22 @@ export const ownerContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 986,
+                        "id": 994,
                         "name": "ElementaryTypeName",
                         "src": "364:7:5"
                       }
                     ],
-                    "id": 987,
+                    "id": 995,
                     "name": "VariableDeclaration",
                     "src": "364:24:5"
                   }
                 ],
-                "id": 988,
+                "id": 996,
                 "name": "ParameterList",
                 "src": "332:57:5"
               }
             ],
-            "id": 989,
+            "id": 997,
             "name": "EventDefinition",
             "src": "306:84:5"
           },
@@ -979,7 +979,7 @@ export const ownerContractABI = {
               ],
               "name": "",
               "overrides": null,
-              "scope": 1039,
+              "scope": 1047,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -989,7 +989,7 @@ export const ownerContractABI = {
                 "attributes": {
                   "text": " @dev The Ownable constructor sets the original `owner` of the contract to the sender\n account."
                 },
-                "id": 990,
+                "id": 998,
                 "name": "StructuredDocumentation",
                 "src": "396:119:5"
               },
@@ -1000,7 +1000,7 @@ export const ownerContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 991,
+                "id": 999,
                 "name": "ParameterList",
                 "src": "531:2:5"
               },
@@ -1011,7 +1011,7 @@ export const ownerContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 992,
+                "id": 1000,
                 "name": "ParameterList",
                 "src": "534:0:5"
               },
@@ -1036,11 +1036,11 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 983,
+                              "referencedDeclaration": 991,
                               "type": "address",
                               "value": "owner"
                             },
-                            "id": 993,
+                            "id": 1001,
                             "name": "Identifier",
                             "src": "544:5:5"
                           },
@@ -1066,32 +1066,32 @@ export const ownerContractABI = {
                                   "type": "msg",
                                   "value": "msg"
                                 },
-                                "id": 994,
+                                "id": 1002,
                                 "name": "Identifier",
                                 "src": "552:3:5"
                               }
                             ],
-                            "id": 995,
+                            "id": 1003,
                             "name": "MemberAccess",
                             "src": "552:10:5"
                           }
                         ],
-                        "id": 996,
+                        "id": 1004,
                         "name": "Assignment",
                         "src": "544:18:5"
                       }
                     ],
-                    "id": 997,
+                    "id": 1005,
                     "name": "ExpressionStatement",
                     "src": "544:18:5"
                   }
                 ],
-                "id": 998,
+                "id": 1006,
                 "name": "Block",
                 "src": "534:35:5"
               }
             ],
-            "id": 999,
+            "id": 1007,
             "name": "FunctionDefinition",
             "src": "520:49:5"
           },
@@ -1107,7 +1107,7 @@ export const ownerContractABI = {
                 "attributes": {
                   "text": " @dev Throws if called by any account other than the owner."
                 },
-                "id": 1000,
+                "id": 1008,
                 "name": "StructuredDocumentation",
                 "src": "576:77:5"
               },
@@ -1118,7 +1118,7 @@ export const ownerContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 1001,
+                "id": 1009,
                 "name": "ParameterList",
                 "src": "676:2:5"
               },
@@ -1158,7 +1158,7 @@ export const ownerContractABI = {
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 1002,
+                            "id": 1010,
                             "name": "Identifier",
                             "src": "689:7:5"
                           },
@@ -1199,12 +1199,12 @@ export const ownerContractABI = {
                                       "type": "msg",
                                       "value": "msg"
                                     },
-                                    "id": 1003,
+                                    "id": 1011,
                                     "name": "Identifier",
                                     "src": "697:3:5"
                                   }
                                 ],
-                                "id": 1004,
+                                "id": 1012,
                                 "name": "MemberAccess",
                                 "src": "697:10:5"
                               },
@@ -1214,41 +1214,41 @@ export const ownerContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 983,
+                                  "referencedDeclaration": 991,
                                   "type": "address",
                                   "value": "owner"
                                 },
-                                "id": 1005,
+                                "id": 1013,
                                 "name": "Identifier",
                                 "src": "711:5:5"
                               }
                             ],
-                            "id": 1006,
+                            "id": 1014,
                             "name": "BinaryOperation",
                             "src": "697:19:5"
                           }
                         ],
-                        "id": 1007,
+                        "id": 1015,
                         "name": "FunctionCall",
                         "src": "689:28:5"
                       }
                     ],
-                    "id": 1008,
+                    "id": 1016,
                     "name": "ExpressionStatement",
                     "src": "689:28:5"
                   },
                   {
-                    "id": 1009,
+                    "id": 1017,
                     "name": "PlaceholderStatement",
                     "src": "727:1:5"
                   }
                 ],
-                "id": 1010,
+                "id": 1018,
                 "name": "Block",
                 "src": "679:56:5"
               }
             ],
-            "id": 1011,
+            "id": 1019,
             "name": "ModifierDefinition",
             "src": "658:77:5"
           },
@@ -1260,7 +1260,7 @@ export const ownerContractABI = {
               "kind": "function",
               "name": "transferOwnership",
               "overrides": null,
-              "scope": 1039,
+              "scope": 1047,
               "stateMutability": "nonpayable",
               "virtual": false,
               "visibility": "public"
@@ -1270,7 +1270,7 @@ export const ownerContractABI = {
                 "attributes": {
                   "text": " @dev Allows the current owner to transfer control of the contract to a newOwner.\n @param newOwner The address to transfer ownership to."
                 },
-                "id": 1012,
+                "id": 1020,
                 "name": "StructuredDocumentation",
                 "src": "742:160:5"
               },
@@ -1282,7 +1282,7 @@ export const ownerContractABI = {
                       "mutability": "mutable",
                       "name": "newOwner",
                       "overrides": null,
-                      "scope": 1038,
+                      "scope": 1046,
                       "stateVariable": false,
                       "storageLocation": "default",
                       "type": "address",
@@ -1296,17 +1296,17 @@ export const ownerContractABI = {
                           "stateMutability": "nonpayable",
                           "type": "address"
                         },
-                        "id": 1013,
+                        "id": 1021,
                         "name": "ElementaryTypeName",
                         "src": "934:7:5"
                       }
                     ],
-                    "id": 1014,
+                    "id": 1022,
                     "name": "VariableDeclaration",
                     "src": "934:16:5"
                   }
                 ],
-                "id": 1015,
+                "id": 1023,
                 "name": "ParameterList",
                 "src": "933:18:5"
               },
@@ -1317,7 +1317,7 @@ export const ownerContractABI = {
                   ]
                 },
                 "children": [],
-                "id": 1018,
+                "id": 1026,
                 "name": "ParameterList",
                 "src": "969:0:5"
               },
@@ -1332,16 +1332,16 @@ export const ownerContractABI = {
                       "overloadedDeclarations": [
                         null
                       ],
-                      "referencedDeclaration": 1011,
+                      "referencedDeclaration": 1019,
                       "type": "modifier ()",
                       "value": "onlyOwner"
                     },
-                    "id": 1016,
+                    "id": 1024,
                     "name": "Identifier",
                     "src": "959:9:5"
                   }
                 ],
-                "id": 1017,
+                "id": 1025,
                 "name": "ModifierInvocation",
                 "src": "959:9:5"
               },
@@ -1381,7 +1381,7 @@ export const ownerContractABI = {
                               "type": "function (bool) pure",
                               "value": "require"
                             },
-                            "id": 1019,
+                            "id": 1027,
                             "name": "Identifier",
                             "src": "979:7:5"
                           },
@@ -1406,11 +1406,11 @@ export const ownerContractABI = {
                                   "overloadedDeclarations": [
                                     null
                                   ],
-                                  "referencedDeclaration": 1014,
+                                  "referencedDeclaration": 1022,
                                   "type": "address",
                                   "value": "newOwner"
                                 },
-                                "id": 1020,
+                                "id": 1028,
                                 "name": "Identifier",
                                 "src": "987:8:5"
                               },
@@ -1450,12 +1450,12 @@ export const ownerContractABI = {
                                           "name": "address",
                                           "type": null
                                         },
-                                        "id": 1021,
+                                        "id": 1029,
                                         "name": "ElementaryTypeName",
                                         "src": "999:7:5"
                                       }
                                     ],
-                                    "id": 1022,
+                                    "id": 1030,
                                     "name": "ElementaryTypeNameExpression",
                                     "src": "999:7:5"
                                   },
@@ -1472,27 +1472,27 @@ export const ownerContractABI = {
                                       "type": "int_const 0",
                                       "value": "0"
                                     },
-                                    "id": 1023,
+                                    "id": 1031,
                                     "name": "Literal",
                                     "src": "1007:1:5"
                                   }
                                 ],
-                                "id": 1024,
+                                "id": 1032,
                                 "name": "FunctionCall",
                                 "src": "999:10:5"
                               }
                             ],
-                            "id": 1025,
+                            "id": 1033,
                             "name": "BinaryOperation",
                             "src": "987:22:5"
                           }
                         ],
-                        "id": 1026,
+                        "id": 1034,
                         "name": "FunctionCall",
                         "src": "979:31:5"
                       }
                     ],
-                    "id": 1027,
+                    "id": 1035,
                     "name": "ExpressionStatement",
                     "src": "979:31:5"
                   },
@@ -1529,11 +1529,11 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 989,
+                              "referencedDeclaration": 997,
                               "type": "function (address,address)",
                               "value": "OwnershipTransferred"
                             },
-                            "id": 1028,
+                            "id": 1036,
                             "name": "Identifier",
                             "src": "1025:20:5"
                           },
@@ -1543,11 +1543,11 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 983,
+                              "referencedDeclaration": 991,
                               "type": "address",
                               "value": "owner"
                             },
-                            "id": 1029,
+                            "id": 1037,
                             "name": "Identifier",
                             "src": "1046:5:5"
                           },
@@ -1557,21 +1557,21 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1014,
+                              "referencedDeclaration": 1022,
                               "type": "address",
                               "value": "newOwner"
                             },
-                            "id": 1030,
+                            "id": 1038,
                             "name": "Identifier",
                             "src": "1053:8:5"
                           }
                         ],
-                        "id": 1031,
+                        "id": 1039,
                         "name": "FunctionCall",
                         "src": "1025:37:5"
                       }
                     ],
-                    "id": 1032,
+                    "id": 1040,
                     "name": "EmitStatement",
                     "src": "1020:42:5"
                   },
@@ -1594,11 +1594,11 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 983,
+                              "referencedDeclaration": 991,
                               "type": "address",
                               "value": "owner"
                             },
-                            "id": 1033,
+                            "id": 1041,
                             "name": "Identifier",
                             "src": "1072:5:5"
                           },
@@ -1608,41 +1608,41 @@ export const ownerContractABI = {
                               "overloadedDeclarations": [
                                 null
                               ],
-                              "referencedDeclaration": 1014,
+                              "referencedDeclaration": 1022,
                               "type": "address",
                               "value": "newOwner"
                             },
-                            "id": 1034,
+                            "id": 1042,
                             "name": "Identifier",
                             "src": "1080:8:5"
                           }
                         ],
-                        "id": 1035,
+                        "id": 1043,
                         "name": "Assignment",
                         "src": "1072:16:5"
                       }
                     ],
-                    "id": 1036,
+                    "id": 1044,
                     "name": "ExpressionStatement",
                     "src": "1072:16:5"
                   }
                 ],
-                "id": 1037,
+                "id": 1045,
                 "name": "Block",
                 "src": "969:126:5"
               }
             ],
-            "id": 1038,
+            "id": 1046,
             "name": "FunctionDefinition",
             "src": "907:188:5"
           }
         ],
-        "id": 1039,
+        "id": 1047,
         "name": "ContractDefinition",
         "src": "256:842:5"
       }
     ],
-    "id": 1040,
+    "id": 1048,
     "name": "SourceUnit",
     "src": "32:1067:5"
   },
@@ -1652,7 +1652,7 @@ export const ownerContractABI = {
   },
   "networks": {},
   "schemaVersion": "3.3.3",
-  "updatedAt": "2021-01-22T16:32:52.594Z",
+  "updatedAt": "2021-01-22T21:09:33.759Z",
   "devdoc": {
     "details": "The Ownable contract has an owner address, and provides basic authorization control functions, this simplifies the implementation of \"user permissions\".",
     "kind": "dev",

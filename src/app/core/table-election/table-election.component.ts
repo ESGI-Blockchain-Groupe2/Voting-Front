@@ -1,8 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Election } from 'src/app/models/election';
+import { CandidateService } from 'src/app/services/candidate.service';
 import { ElectionFactoryService } from 'src/app/services/election-factory.service';
 import { ElectionHelperService } from 'src/app/services/election-helper.service';
+import { VoteService } from 'src/app/services/vote.service';
 
 @Component({
   selector: 'app-table-election',
@@ -13,14 +14,17 @@ export class TableElectionComponent implements OnInit {
 
   public title: string = "Liste des élections disponibles";
   public elections: any[] = [];
-  public userIsAdmin: boolean = false;$
-  public isLoading: boolean = false;
+  public userIsAdmin: boolean = false;
+  public isLoading: number = -1;
+  public secondTourLoader: boolean = false;
 
 
   constructor(
     private router: Router, 
     private electionFactoryService : ElectionFactoryService,
-    private electionHelperService: ElectionHelperService
+    private electionHelperService: ElectionHelperService,
+    private voteService: VoteService,
+    private candidateService: CandidateService
     ) {
   }
 
@@ -43,8 +47,16 @@ export class TableElectionComponent implements OnInit {
     this.router.navigateByUrl('/manage-admin');
   }
 
-  vote(electionId){
-    this.router.navigate(['/vote'], {queryParams: {electionId: electionId}});
+  async vote(electionId){
+
+    let alreadyVote = await this.voteService.userAlreadyVote(electionId);
+
+    if(alreadyVote){
+      alert("Vous avez déjà voté à cette élection");
+    }
+    else {
+      this.router.navigate(['/vote'], {queryParams: {electionId: electionId}});
+    }
   }
 
   seeResults(electionId){
@@ -52,9 +64,36 @@ export class TableElectionComponent implements OnInit {
   }
 
   async closeElection(electionId){
-    this.isLoading = true;
+    this.isLoading = electionId;
     await this.electionHelperService.endElection(electionId);
-    location.reload();
-    this.isLoading = false;
+
+    let winnersId = await this.electionHelperService.getElectionWinners(electionId);
+    
+    if (winnersId.length > 1){
+      let r = confirm("Il y a plusieurs vainqueurs ex aequo pour cette élection, voulez vous créer un second tour ?");
+      if (r == true) {
+        this.secondTourLoader = true;
+        this.isLoading = -1;
+        let winnersNames = [];
+
+        for (const winnerId in winnersId) {
+          let w = await this.candidateService.getCandidate(electionId, parseInt(winnerId, 10))
+          winnersNames.push(w.name);
+        }
+        await this.electionFactoryService.createElection(this.elections[parseInt(electionId, 10)-1].title + " | Second tour", winnersNames);
+        
+        alert("Second tour crée !");
+        this.secondTourLoader = false;
+        location.reload();
+
+      } else {
+        location.reload();
+        this.isLoading = -1;
+      } 
+    }
+    else{
+      location.reload();
+      this.isLoading = -1;
+    }
   }
 }

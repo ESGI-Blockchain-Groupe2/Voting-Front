@@ -36,11 +36,24 @@
               <td>
                 <button *ngIf="election.isOpen" type="button" (click)="vote(i+1);" class="btn btn-secondary">Voter</button>
                 <button *ngIf="!election.isOpen" type="button" (click)="seeResults(i+1);" class="btn btn-secondary">Resultats</button>
-                <div *ngIf="isLoading" class="spinner-border text-secondary" role="status">
+                <div *ngIf="isLoading == i+1" class="spinner-border text-secondary" role="status">
                   <span class="sr-only">Loading...</span>
                 </div>
-                <button *ngIf="election.isOpen && userIsAdmin && !isLoading" type="button" (click)="closeElection(i+1);" class="btn btn-secondary">Fermer</button>
+                <button *ngIf="election.isOpen && userIsAdmin && isLoading == -1" type="button" (click)="closeElection(i+1);" class="btn btn-secondary">Fermer</button>
               </td>
+            </tr>
+            <tr *ngIf="secondTourLoader">
+              <th></th>
+              <td></td>
+              <td>
+                <div class="spinner-border text-success" role="status">
+                  <span class="sr-only">Loading...</span>
+                </div>
+                <p>Création du second tour en cours...</p>
+              </td>
+              <td></td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </table>

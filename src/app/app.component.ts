@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { $ } from 'protractor';
-import { ElectionFactoryService } from './services/election-factory.service';
+import Web3 from "web3";
 import { Web3ConnectionService } from './services/web3-connection.service';
 
 
@@ -13,26 +12,26 @@ export class AppComponent {
 
   public connectedToContract = false;
 
-  constructor(private web3ConnectionService: Web3ConnectionService, private electionFactoryService: ElectionFactoryService) { }
+  constructor(private web3ConnectionService: Web3ConnectionService) { }
 
   async ngOnInit() {
-
     while(this.connectedToContract !== true){
       this.connectedToContract = await this.web3ConnectionService.connectAccount();
-      //console.log(this.connectedToContract);
     }
 
-    /*if(this.connectedToContract){
-      console.log(await this.electionFactoryService.createElection());
-    }*/
-    /*if(this.connectedToContract){
-      console.log("reponse");
-      console.log(await this.electionFactoryService.getElectionCount());
-    }*/
-    /*if(this.connectedToContract){
-      console.log("reponse");
-      console.log(await this.electionFactoryService.getElection());
-    }*/
-
+    if(this.connectedToContract){
+      let web3js = new Web3(Web3.givenProvider);
+      var accounts = await web3js.eth.getAccounts(); 
+      setInterval(function() {
+        web3js.eth.getAccounts().then(res => {
+          if ( res[0] !== accounts[0]) {
+            accounts[0] = res[0];
+            location.replace("/");
+          }
+        }).catch( _ => {
+          location.replace("/");
+        });
+      }, 100);
+    }
   }
 }

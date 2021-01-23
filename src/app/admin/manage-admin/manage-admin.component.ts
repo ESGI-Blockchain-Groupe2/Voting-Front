@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ElectionFactoryService } from 'src/app/services/election-factory.service';
+import { OwnableService } from 'src/app/services/ownable.service';
 
 @Component({
   selector: 'app-manage-admin',
@@ -14,7 +15,10 @@ export class ManageAdminComponent implements OnInit {
   public isLoadingDelete: boolean = false;
   public isLoadingCreate: boolean = false;
 
-  constructor(private electionFactoryService: ElectionFactoryService) { }
+  constructor(
+    private electionFactoryService: ElectionFactoryService,
+    private ownableService: OwnableService
+    ) { }
 
   ngOnInit(): void {
   }
@@ -36,7 +40,9 @@ export class ManageAdminComponent implements OnInit {
   }
 
   async submitDelete(){
-    if(this.formIsValid()){
+
+    console.log(await this.ownableService.isOwner(this.address));
+    /*if(this.formIsValid()){
       this.isLoadingDelete = true;
       let responseStatus = await this.electionFactoryService.deleteAdmin(this.address);
       this.isLoadingDelete = false;
@@ -48,7 +54,7 @@ export class ManageAdminComponent implements OnInit {
         alert("L'action a échouée, recommencez plus tard");
         location.replace('/');
       }
-    }
+    }*/
   }
 
   async submitAdd(){

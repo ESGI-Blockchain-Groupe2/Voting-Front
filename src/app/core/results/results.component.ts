@@ -6,6 +6,7 @@ import { CandidateService } from 'src/app/services/candidate.service';
 import * as ChartAnnotation from 'chartjs-plugin-annotation';
 import { ElectionHelperService } from 'src/app/services/election-helper.service';
 import * as Chart from 'chart.js';
+import { ElectionFactoryService } from 'src/app/services/election-factory.service';
 
 @Component({
   selector: 'app-results',
@@ -14,7 +15,8 @@ import * as Chart from 'chart.js';
 })
 export class ResultsComponent implements AfterViewInit {
 
-  public title : string = "Voir les resultats";
+  public title: string = "Voir les resultats";
+  public nbVotes: string = "";
   public candidates: any[] = [];
   private electionId: number;
   public possibleNotes = [
@@ -106,7 +108,8 @@ export class ResultsComponent implements AfterViewInit {
   constructor(
     private activatedRoute: ActivatedRoute, 
     private candidateService: CandidateService,
-    private electionHelperService: ElectionHelperService
+    private electionHelperService: ElectionHelperService,
+    private electionFactoryService: ElectionFactoryService
   ) { }
 
   async ngAfterViewInit() {
@@ -115,13 +118,17 @@ export class ResultsComponent implements AfterViewInit {
       this.electionId = params['electionId'];
     });
 
+    let election = await this.electionFactoryService.getElection(this.electionId);
+    this.nbVotes = election.nbTotalVoters;
+
     let candidateCount = await this.candidateService.getCandidatesCount(this.electionId);
-    let winnerId = await this.electionHelperService.getElectionWinner(this.electionId);
+    let winnersId = await this.electionHelperService.getElectionWinners(this.electionId);
 
     for (let count = 0; count < candidateCount; count++) {
       this.candidates.push({
         ...await this.candidateService.getCandidate(this.electionId, count),
-        isWinner: count === parseInt(winnerId, 10) ? true : false,
+        isWinner: (count === parseInt(winnersId[0], 10)) && winnersId.length == 1 ? true : false,
+        equality: winnersId.includes(count.toString()) && winnersId.length > 1 ? true : false,
         id: count
       });
     }

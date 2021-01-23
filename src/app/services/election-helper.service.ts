@@ -18,13 +18,12 @@ export class ElectionHelperService {
 
   async endElection(electionId: number) {
     this.accounts = await this.web3js.eth.getAccounts(); 
-    const response = await this.electionHelperContract.methods.endElection(electionId).send({ from: this.accounts[0] });
-    return response.status;
+    await this.electionHelperContract.methods.endElection(electionId).send({ from: this.accounts[0] });
   }
 
-  async getElectionWinner(electionId: number): Promise<string> {
+  async getElectionWinners(electionId: number): Promise<string[]> {
     this.accounts = await this.web3js.eth.getAccounts(); 
-    const winnerId = await this.electionHelperContract.methods.getElectionWinner(electionId).call({ from: this.accounts[0] });
-    return winnerId;
+    const winnersId = await this.electionHelperContract.methods.getElectionWinners(electionId).call({ from: this.accounts[0] });
+    return winnersId;
   }
 }
